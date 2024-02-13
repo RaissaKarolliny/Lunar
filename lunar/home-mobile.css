@@ -1,0 +1,108 @@
+*{
+margin: 0 auto;
+padding: 0 auto;
+}
+
+body {
+    background-color: #A69DB0;
+    width: 100vw;
+    overflow: hidden;
+}
+
+button{
+    background-color: transparent !important;
+    border: none !important; 
+}
+ul, ol {
+    list-style-type: none;
+}
+
+  
+#section-mobile-home {
+    background-color: #37264A;
+    border-radius: 0px 0px 120px 120px;
+    width: auto;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+  
+#logo-astronauta {
+    transform: scaleX(-1);
+    height: 90%;
+    width: auto;
+    display: flex;
+}
+
+.btn-nav-mobile-img{
+    max-width: 83%;
+    margin-bottom: 20%;
+}
+
+.btn-src-mobile-img{
+    max-width: 60%;
+    margin-bottom: 10%;
+    margin-left: 20%;
+}
+
+.btn-src-mobile{
+    background-color: #03051A;
+    height: 15%;
+    width: 15%;
+    margin: 0;
+    padding: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 0px 5px 30px;
+    padding: auto;
+}
+
+.btn-nav-mobile{
+    background-color: #03051A;
+    height: 15%;
+    width: 15%;
+    margin: 0;
+    padding: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 5px 30px 5px;
+    padding: auto;
+}
+
+#gatilhoMenu{
+    position: relative;
+    z-index: 1;
+}
+    
+.conteudoOffCanvas{
+    height: 100vh;
+    width: 40vw;
+    position: fixed;
+    left: -40vw;
+    background-color: #03051A;
+    transition: left 0.3s ease;
+    z-index: 0;
+}
+
+.listaOffCanvas {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column; /* Dispor os itens verticalmente */
+    justify-content: space-evenly    ; /* Alinhar os itens ao centro horizontalmente */
+    align-items: center; /* Alinhar os itens ao centro verticalmente */
+}
+
+.iconeMenu{
+    margin-top: 60%;
+    margin-bottom: 6%;
+    max-width: 50%;
+    margin-bottom: 10%;
+ 
+}
+
+.ativarOffCanvas{
+    transform: none !important;
+    left: 0;
+}
