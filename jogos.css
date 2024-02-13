@@ -6,7 +6,7 @@
     body {
         width: 100vw;
         overflow: hidden;
-        background-color: #37264A !important;
+        background-color:#03051A !important;
     }
     header{
        
@@ -19,7 +19,7 @@
 
     }
     #section-mobile-home {
-        background-color: #37264A;
+        background-color: #03051A;
         width: auto;
         height: 100%;
         display: inline-flex;
@@ -61,7 +61,7 @@
     }
     #div-pesquisa{
         border: none;
-        margin-left: 3%;
+        margin-left: 1%;
         width: 50%; 
         height: 38px; 
         background-color: #D9D9D9;
@@ -72,7 +72,7 @@
     }
   
     #img-scr{
-        width: 15%;
+        width: 20%;
         height: 100%;
         align-items: center;
         display: flex;
@@ -90,7 +90,7 @@
    
     .filtro{
         display: flex;
-        margin-left: 4px;
+        margin-right: 20%;
         background-color: #37264A;
         box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40)!important;
         border-radius: 50px!important;
@@ -122,6 +122,52 @@
         border-radius: 44px;
         box-shadow: 5px 3px 4px rgba(0, 0, 0, 0.40); 
         object-fit: fill;
+    }
+    #cor-filtro{
+        background-color: #37264A !important;
+        
+    }
+    #cor-filtro a{
+        color: white !important;
+    }
+    #gatilhoMenu{
+        position: relative;
+        z-index: 1;
+    }
+        
+    .conteudoOffCanvas{
+        height: 100vh;
+        width: 40vw;
+        position: fixed;
+        left: -40vw;
+        background-color: #03051A;
+        transition: left 0.3s ease;
+        z-index: 0;
+    }
+    
+    .listaOffCanvas {
+        margin-top: 20%;
+        display: flex;
+        flex-direction: column; /* Dispor os itens verticalmente */
+        justify-content: space-evenly    ; /* Alinhar os itens ao centro horizontalmente */
+        align-items: center; /* Alinhar os itens ao centro verticalmente */
+    }
+    
+    .iconeMenu{
+        margin-top: 60%;
+        margin-bottom: 6%;
+        max-width: 50%;
+        margin-bottom: 10%;
+     
+    }
+    
+    .ativarOffCanvas{
+        transform: none !important;
+        left: 0;
+    }
+    
+    input::placeholder{
+        font-size:small
     }
 
   
