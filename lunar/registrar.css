@@ -1,105 +1,114 @@
-*{
+* {
     margin: 0 auto;
     padding: 0 auto;
-    
-    }
+    border: none;
+}
+
 body {
     width: 100vw;
     overflow: hidden;
     background-color: #03051A !important;
 }
-main{
+
+main {
     width: 100%;
-    height: 75vh; 
-    background: #A69DB0; 
+    height: 75vh;
+    background: #A69DB0;
     border-top-right-radius: 130px;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-   
-    
 }
-header{
+
+header {
     width: 100%;
-    height: 25vh; 
-    background-color: #03051A; 
-}
-#registrar{
-   width: 100%;
-   height: 7%;
-   align-items: start;
-   margin-bottom: 6%;
-
+    height: 25vh;
+    background-color: #03051A;
 }
 
-#registrar label{
-    background-color:#D9D9D9 ;
+#registrar {
+    width: 100%;
+    height: 7%;
+    align-items: start;
+    margin-bottom: 6%;
+}
+
+#registrar label {
+    background-color: #D9D9D9;
     width: 50%;
     height: 7%;
-   
-    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40);
     border-top-right-radius: 35px;
     border-bottom-right-radius: 35px;
     border-bottom-left-radius: 35px;
-    color: rgba(0, 0, 0, 0.80); 
+    color: rgba(0, 0, 0, 0.80);
     align-items: center;
     justify-content: center;
     display: flex;
-    font-size:large; 
+    font-size: large;
     position: absolute;
 }
 
-.formulario{
+.formulario {
     width: 100%;
     height: 80%;
-    
-    
 }
 
-.formulario form input{
+.formulario form input {
     width: 80%;
     height: 50px;
-    background: #37264A; 
-    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
-    border-radius:60px;
+    background: #37264A;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40);
+    border-radius: 60px;
     border: none;
     margin: 2%;
     font-size: small;
-   
 }
-.formulario form{
+
+.formulario form {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-   
-
 }
-.formulario form div{
+
+.formulario form div {
     display: flex;
     width: 85%;
 }
 
-input::placeholder{
+input::placeholder {
     text-align: center;
 }
-#footer{
-    width: 65%;
-    height: 18%;
-    background-color: #37264A;
-    border-top-left-radius: 300px; 
-    border-top-right-radius: 300px;
+
+header {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    font-weight: 200;
 }
 
-#footer img{
-    width: auto;
-    height: 70%;
+#upLoadPhoto {
+    margin-top: 5%;
+    height: 80%;
+    width: 40%;
+    border: none;
+    border-radius: 50%;
+    background-color: #c4c4c4;
+    display: flex;
+    background-image: url(icones/plus.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden !important;
+    
+}
+
+#upLoadPhoto img{
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    object-fit: cover;
 }

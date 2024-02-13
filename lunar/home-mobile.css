@@ -33,61 +33,6 @@ ul, ol {
     width: auto;
     display: flex;
 }
-#section-criador-lunar {
-    margin: 10px auto 10px auto;
-    width: 320px;
-    position: relative;
-    top: -40px;
-    z-index: 0;
-}
-
-.texto-criador-lunar{
-    color: #D9D9D9;
-    width: auto;
-}
-
-#titulo-criador-lunar{
-    margin: 10px;
-}
-
-#paragrafo-criador-lunar{
-    text-align: justify;
-    padding: 5px 15px 5px 15px;
-    margin: 0px;
-}
-
-#div-titulo-criador-lunar{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    background-color: #03051A;
-    border-radius: 50px 50px 10px 10px;
-    margin: 0px 0px 10px 0px;
-    height: 50px;
-}
-
-#div-descricao-criador-lunar{
-    background-color: #03051A;
-    border-radius: 10px 10px 50px 50px;
-    display: flex;
-}
-
-#btn-estrela-mobile{
-    background-color: #D9D9D9;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px 0px 0px 50px;
-    padding: auto;
-}
-
-
-
-
-
-
 
 .btn-nav-mobile-img{
     max-width: 83%;
@@ -125,93 +70,7 @@ ul, ol {
     border-radius: 0px 5px 30px 5px;
     padding: auto;
 }
-.conteudoOffCanvas{
-    height: 100vh;
-    width: 80vw;
-    position: fixed;
-    margin: 0;
-    transition: translateX(-100%);
-}
-.conteudoOffCanvas{
-    height: 100vh;
-    width: 80vw;
-    position: fixed;
-    margin: 0;
-}
 
-.carousel-container {
-    width: 100%;
-    overflow: hidden;
-}
-
-.cards-container {
-    display: flex;
-    overflow-x: auto;
-}
-#jogos-da-semana-card {
-    background-color: #D9D9D9;
-    border-radius: 15px;
-    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40);
-    padding: 10px;
-    margin: 10px 10px 20px 10px;
-    width: 200px;
-    height: 40px;
-    display: flex; 
-    align-items: center; 
-    justify-content: center;
-}
-#jogos-da-semana-card h6 {
-    font-family: 'Mitr', sans-serif;
-    font-size: 20px;
-}
-
-.card {
-    width: 200px; 
-    border-radius: 20px;
-    overflow: hidden;
-    margin-left: 10px;
-    cursor: pointer;
-    transition: transform 0.5s;
-    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40);
-
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.card:hover {
-    transform: scale
-
-}
-.exibir-detalhes-btn {
-    position: absolute;
-    top: 90%;
-    left: 90%;
-    transform: translate(-50%, -50%);
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-}
-
-.exibir-detalhes-btn img {
-    width: 20px; 
-    height: auto;
-}
-.bbtn-detalhes-mobile {
-  background-color: #37264A;
-  height: 15%;
-  width: 15%;
-  margin: 0;
-  padding: 3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px 0px 5px 30px;
-  padding: auto;
-}
 #gatilhoMenu{
     position: relative;
     z-index: 1;
@@ -224,7 +83,7 @@ ul, ol {
     left: -40vw;
     background-color: #03051A;
     transition: left 0.3s ease;
-    z-index: 1;
+    z-index: 0;
 }
 
 .listaOffCanvas {
