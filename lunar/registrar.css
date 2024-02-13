@@ -120,6 +120,7 @@ header {
     border-top-right-radius: 300px;
     display: flex;
     justify-content: center;
+    border: none;
     align-items: center;
     flex-direction: column;
     color: white;
