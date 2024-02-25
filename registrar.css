@@ -131,3 +131,19 @@ header {
     width: 25%;
     height: auto;
 }
+
+button{
+    background-color: #37264A;
+    width: 40%;
+    height: 40px;
+    border-radius: 60px !important;
+    color: white !important;
+    margin-left: 2%;
+    margin-top: 5% !important;
+    border: none;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
+    font-weight: 150 !important;
+}
+
+
+
