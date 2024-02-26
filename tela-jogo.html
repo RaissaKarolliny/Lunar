@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="tela-jogo-style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <title>Lunar</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <span class="btn-nav-mobile">
+                <button id="gatilhoMenu">
+                    <img src="icones/menu.svg" class="btn-nav-mobile-img" alt="">
+                </button>
+            </span>
+        </div>
+    </header>
+
+    <main>
+        <section id="descricao-jogo-section">
+            <div id="descricao-jogo-div-imagem-e-texto">
+                <div id="descricao-jogo-coluna-1">
+                    <img id="descricao-jogo-imagem" src="/fotos/Hollow_Knight.png" alt="imagem do jogo">
+                </div>
+                <div id="descricao-jogo-coluna-2">
+                    <h3 id="descricao-jogo-titulo">Hollow Knight</h3>
+                    <div id="descricao-jogo-div-paragrafo">
+                        <p id="descricao-jogo-paragrafo">Forje seu caminho em Hollow Knight! Uma aventura de ação épica em um vasto reino arruinado de insetos e heróis. Explore cavernas serpenteantes, lute contra criaturas malignas e alie-se a insetos bizarros num estilo clássico 2D desenhado à mão.</p>
+                    </div>
+                    <img id="descricao-jogo-icone-avaliacao" src="/icones/estrelas-avaliacao.svg" alt="imagem-avaliação-jogo">
+                </div>
+            </div>
+
+            <div id="carousel-container">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-around">
+                                <img src="fotos/Hollow_Knight.png" class="d-block w-25" alt="Game 1">
+                                <img src="fotos/Hollow_Knight.png" class="d-block w-25" alt="Game 2">
+                                <img src="fotos/Hollow_Knight.png" class="d-block w-25" alt="Game 3">
+                            </div>
+    
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-around">
+                                <img src="fotos/Hollow_Knight.png" class="d-block w-25" alt="Game 4">
+                                <img src="fotos/Hollow_Knight.png" class="d-block w-25" alt="Game 5">
+                                <img src="fotos/Hollow_Knight.png" class="d-block w-25" alt="Game 6">
+                            </div>
+    
+                        </div>
+    
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+                </div>
+            </div>
+
+            <span id="btn-download-mobile">
+                <button>
+                    <img id="btn-download-img" src="icones/Component 14.svg"  alt="">
+                </button>
+            </span>
+        </section>
+
+        <section id="section-comentarios">
+            <div id="div-btn-titulo-comentarios">
+                <span id="btn-comentar">
+                    <button>
+                        <img id="img-btn-comentarios" src="/icones/plus.svg" alt="">
+                    </button>
+                </span>
+                <div id="div-titulo-do-botao-comentar">
+                    <h3 id="titulo-do-botao-comentar">
+                        COMENTAR
+                    </h3>
+                </div>
+            </div>
+
+            <div id="div-dos-comentarios">
+                <div class="comentario">
+                    <div class="div-do-header-do-comentario">
+                        <div class="div-perfil-e-avaliacao-do-comentario">
+                            <div class="div-nome-do-usuario-do-comentario">
+                                <h5 class="nome-do-usuario-do-comentario"><b>Josué caçador de casadas</b></h5>
+                            </div>
+                            <div class="div-avaliacao-do-comentario">
+                                <img class="avaliacao-do-comentario" src="/icones/estrelas-avaliacao.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="div-data-e-likes-do-comentario">
+                            <div class="div-data-do-comentario">
+                                <p class="paragrafo-data-do-comentario"><b>25/02/2024</b></p>
+                            </div>
+                            <div class="div-likes-do-comentario">
+                                <img class="likes-do-comentario" src="icones/icone-like.svg">
+                                <p class="paragrafo-likes-do-comentario"><b>1.2K</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div-do-paragrafo-do-comentario">
+                        <p class="paragrafo-do-comentario">QUE JOGO LIXO, PREFIRO COMER LIXO TÔXICO DO QUE TER QUE JOGAR ISSO DE NOVO, ESSE PDAÇO DE BOSTA ACABOU COM MINHA FAMÍLIA, E COLOCOU FOGO NO MEU CACHORRO, 10/10</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer></footer>
+    <script src="tela-jogo.js"></script>
+</body>
+
+</html>
