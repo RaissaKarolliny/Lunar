@@ -22,5 +22,8 @@ function handleFileSelect(event) {
 function openFileInput() {
     document.getElementById('fileInput').click();
 }
+function handleUploadClick() {
+    document.getElementById('uparArquivo').click();
+}
 
 

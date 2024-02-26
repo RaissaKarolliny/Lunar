@@ -26,7 +26,7 @@ ul, ol {
     display: flex;
     justify-content: center;
 }
-  
+
 #logo-astronauta {
     transform: scaleX(-1);
     height: 90%;
