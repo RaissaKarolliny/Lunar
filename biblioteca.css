@@ -89,8 +89,8 @@ header img{
 .pesquisa{
     width: 100%;
     height: 13%;
-    flex-direction: row; /* Alterado para "row" para colocar os elementos na mesma linha */
-    justify-content: space-between; /* Distribui os elementos ao longo da linha */
+    flex-direction: row; 
+    justify-content: space-between; 
     align-items: center;
     display:flex;
 }
