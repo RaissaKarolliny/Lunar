@@ -11,6 +11,7 @@ html {
 body {
     background-color: #A69DB0;
     width: 100vw;
+    overflow-x: hidden;
     
 }
 
@@ -26,6 +27,7 @@ button {
     height: 300px;
     display: flex;
     justify-content: center;
+    
 }
 
 #logo-astronauta {
@@ -136,13 +138,17 @@ button {
 }
 
 .carousel-container {
-    width: 100%;
-    overflow: hidden;
+    overflow: hidden
 }
-
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
 .cards-container {
     display: flex;
     overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    margin-bottom: 20px;
 }
 
 #jogos-da-semana-card {
@@ -208,12 +214,13 @@ button {
 #div-pesquisa{
     border: none;
     margin-left: 8%;
-    width: 70%; 
+    width: 90%; 
     height: 40px; 
     background-color: #D9D9D9;
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
     border-radius: 50px;
     display: flex;
+    
     
 }
 
@@ -265,9 +272,9 @@ ol {
 }
 .campo-pesquisa {
     display: none;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color:transparent; 
     position: fixed;
-    top: 0.5%;
+    top: 1%;
     left: 22%;
     justify-content: center;
     align-items: center;
