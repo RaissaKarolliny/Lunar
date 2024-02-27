@@ -31,7 +31,10 @@ header {
 }
 button{
     background-color: transparent;
+    color: #c4c4c4 !important;
+    font-weight: 200 !important;
 }
+
 main section{
     height: 84%;
     width: 100%;
@@ -65,15 +68,21 @@ main section form button{
     height: 7%;
   }
 textarea{
-    height: 25% !important ;
+    height: 20% !important ;
 }
 
 #imagens{
     background-color: #37264A;
-    height: 20%;
+    height: 30%;
     width: 70%;
     border-radius: 30px;
     margin: 4%;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2%;   
+    padding-bottom: 2%;
 }
 
 #footer{
@@ -98,8 +107,8 @@ textarea{
 
 #upLoadPhoto {
     margin-top: 5%;
-    height: 80%;
-    width: 50%;
+    height: 60%;
+    width: 40%;
     border: none;
     border-radius: 30px;
     background-color: #c4c4c4;
@@ -111,6 +120,8 @@ textarea{
     align-items: center;
     justify-content: center;
     overflow: hidden !important;
+    display: inline-block; /* Coloca os elementos lado a lado */
+    margin-right: 10px; 
     
 }
 #section-mobile-home {
@@ -162,4 +173,8 @@ textarea{
     height: 100%; 
     display: flex;
     object-fit: cover;
+}
+#value{
+    color: #c4c4c4 !important;
+    font-weight: 200 !important;
 }
