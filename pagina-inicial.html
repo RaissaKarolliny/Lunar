@@ -10,6 +10,7 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
         <script defer src="script.js"></script>
+        <script defer src="pagina-inicial.js"></script>
     <title>Lunar</title>
 </head>
 
@@ -25,10 +26,20 @@
             <img id="logo-astronauta" src="fotos/img.png" alt="logo astronauta">
 
             <span class="btn-src-mobile">
-                <button href="">
-                    <img src="icones/src.svg" class="btn-src-mobile-img" alt="">
+                <button id="btnPesquisar" onclick="togglePesquisa()">
+                    <img id="iconePesquisa" src="icones/src.svg" class="btn-src-mobile-img" alt="Pesquisar">
                 </button>
+                <div id="campoPesquisa" class="campo-pesquisa">
+                    <form id="formPesquisa" onsubmit="realizarPesquisa(); return false;"> 
+                        <div id="div-pesquisa">
+                            <input class="input-pesquisa" type="text" placeholder="Buscar por Jogo" id="inputPesquisa">
+                            <button type="submit" id="img-scr"><img id="img-src-img" src="icones/srcescuro.svg" alt=""></button>
+                        </div>
+                    </form>
+                </div>
+                
             </span>
+            
 
             <div id="menuOffCanvas" class="conteudoOffCanvas">
                 <ul class="listaOffCanvas">
@@ -49,6 +60,7 @@
 
         </section>
     </header>
+    <div id="fadePreto" class="fade-preto"></div>
 
   
     <main>
@@ -150,7 +162,164 @@
                 </div>
             </div>
         </div>
-
+        <div id="jogos-da-semana-card">
+            <h4>Premiados</h4>
+        </div>
+        <div class="carousel-container">
+            <div class="cards-container">
+                <div id="jogo-container-1" class="jogo-container">
+                    <a href="caminho-jogo1" class="card-link">
+                        <div class="card">
+                            <img src="icones/cupthead.jpg" alt="Imagem 1">
+                        </div>
+                    </a>
+                    <span class="btn-carrossel-mobile">
+                        <button>
+                            <img src="icones/botao-detalhes.svg" class="btn-carrossel-mobile-img" alt="">  
+                        </button>
+                    </span>
+                </div>
+                <div class="jogo-container">
+                    <a href="/caminho-jogo2" class="card-link">
+                        <div class="card">
+                            <img src="icones/hollow.png" alt="Imagem 2">
+                        </div>
+                    </a>
+                    <span class="btn-carrossel-mobile">
+                        <button>
+                            <img src="icones/botao-detalhes.svg" class="btn-carrossel-mobile-img" alt="">  
+                        </button>
+                    </span>
+                </div>
+                <div class="jogo-container">
+                    <a href="/caminho-jogo1" class="card-link">
+                        <div class="card">
+                            <img src="icones/cupthead.jpg" alt="Imagem 1">
+                        </div>
+                    </a>
+                    <span class="btn-carrossel-mobile">
+                        <button>
+                            <img src="icones/botao-detalhes.svg" class="btn-carrossel-mobile-img" alt="">  
+                        </button>
+                    </span>
+                </div>
+                <div class="jogo-container">
+                    <a href="/caminho-jogo2" class="card-link">
+                        <div class="card">
+                            <img src="icones/hollow.png" alt="Imagem 2">
+                        </div>
+                    </a>
+                    <span class="btn-carrossel-mobile">
+                        <button>
+                            <img src="icones/botao-detalhes.svg" class="btn-carrossel-mobile-img" alt="">  
+                        </button>
+                    </span>
+                </div>
+                <div class="jogo-container">
+                    <a href="/caminho-jogo1" class="card-link">
+                        <div class="card">
+                            <img src="icones/cupthead.jpg" alt="Imagem 1">
+                        </div>
+                    </a>
+                    <span class="btn-carrossel-mobile">
+                        <button>
+                            <img src="icones/botao-detalhes.svg" class="btn-carrossel-mobile-img" alt="">  
+                        </button>
+                    </span>
+                </div>
+                <div class="jogo-container">
+                    <a href="/caminho-jogo2" class="card-link">
+                        <div class="card">
+                            <img src="icones/hollow.png" alt="Imagem 2">
+                        </div>
+                    </a>
+                    <span class="btn-carrossel-mobile">
+                        <button>
+                            <img src="icones/botao-detalhes.svg" class="btn-carrossel-mobile-img" alt="">  
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div id="jogos-da-semana-card">
+            <h4>Populares</h4>
+        </div>
+        <div class="carousel-container">
+            <div class="cards-container">
+                <div id="jogo-container-1" class="jogo-container">
+                    <a href="caminho-jogo1" class="card-link">
+                        <div class="card">
+                            <img src="icones/cupthead.jpg" alt="Imagem 1">
+                        </div>
+                    </a>
+                    <span class="btn-carrossel-mobile">
+                        <button>
+                            <img src="icones/botao-detalhes.svg" class="btn-carrossel-mobile-img" alt="">  
+                        </button>
+                    </span>
+                </div>
+                <div class="jogo-container">
+                    <a href="/caminho-jogo2" class="card-link">
+                        <div class="card">
+                            <img src="icones/hollow.png" alt="Imagem 2">
+                        </div>
+                    </a>
+                    <span class="btn-carrossel-mobile">
+                        <button>
+                            <img src="icones/botao-detalhes.svg" class="btn-carrossel-mobile-img" alt="">  
+                        </button>
+                    </span>
+                </div>
+                <div class="jogo-container">
+                    <a href="/caminho-jogo1" class="card-link">
+                        <div class="card">
+                            <img src="icones/cupthead.jpg" alt="Imagem 1">
+                        </div>
+                    </a>
+                    <span class="btn-carrossel-mobile">
+                        <button>
+                            <img src="icones/botao-detalhes.svg" class="btn-carrossel-mobile-img" alt="">  
+                        </button>
+                    </span>
+                </div>
+                <div class="jogo-container">
+                    <a href="/caminho-jogo2" class="card-link">
+                        <div class="card">
+                            <img src="icones/hollow.png" alt="Imagem 2">
+                        </div>
+                    </a>
+                    <span class="btn-carrossel-mobile">
+                        <button>
+                            <img src="icones/botao-detalhes.svg" class="btn-carrossel-mobile-img" alt="">  
+                        </button>
+                    </span>
+                </div>
+                <div class="jogo-container">
+                    <a href="/caminho-jogo1" class="card-link">
+                        <div class="card">
+                            <img src="icones/cupthead.jpg" alt="Imagem 1">
+                        </div>
+                    </a>
+                    <span class="btn-carrossel-mobile">
+                        <button>
+                            <img src="icones/botao-detalhes.svg" class="btn-carrossel-mobile-img" alt="">  
+                        </button>
+                    </span>
+                </div>
+                <div class="jogo-container">
+                    <a href="/caminho-jogo2" class="card-link">
+                        <div class="card">
+                            <img src="icones/hollow.png" alt="Imagem 2">
+                        </div>
+                    </a>
+                    <span class="btn-carrossel-mobile">
+                        <button>
+                            <img src="icones/botao-detalhes.svg" class="btn-carrossel-mobile-img" alt="">  
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
         <div id="detalhes-modal" class="modal">
                 <span class="fechar" onclick="fecharDetalhes">&times;</span>
             <img id="imagem-detalhes" src="" alt="Imagem Detalhes">

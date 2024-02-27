@@ -113,11 +113,16 @@ button{
 .carousel-control-prev,
 .carousel-control-next {
     width: 5%;
+    display: none;
+
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: #0305AA;
+    overflow: hidden;
+
+    
 }
 
 #btn-download-mobile{
