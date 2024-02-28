@@ -16,11 +16,9 @@
 
 <body>
     <header>
-        <section id="section-mobile-home">
             <span>
                 <button id="gatilhoMenu"><img src="icones/menu.svg" class="btn-nav-mobile-img" alt=""></button>
             </span>
-        </section>
     </header>
     
     <main>
@@ -44,7 +42,27 @@
             <form action="">
                 <input type="text" placeholder="Nome do jogo">
                 <textarea placeholder="Descrição..." cols="30" rows="10"></textarea>
-                <div id="imagens">
+                <div id="imagens"> 
+                    <div id="upLoadPhoto" onclick="openFileInput()">
+                        <img src="">
+                    </div>
+                    <input type="file" id="fileInput" onchange="handleFileSelect(event)" style="display: none;">
+                    <div id="upLoadPhoto" onclick="openFileInput()">
+                        <img src="">
+                    </div>
+                    <input type="file" id="fileInput" onchange="handleFileSelect(event)" style="display: none;">
+                    <div id="upLoadPhoto" onclick="openFileInput()">
+                        <img src="">
+                    </div>
+                    <input type="file" id="fileInput" onchange="handleFileSelect(event)" style="display: none;">
+                    <div id="upLoadPhoto" onclick="openFileInput()">
+                        <img src="">
+                    </div>
+                    <input type="file" id="fileInput" onchange="handleFileSelect(event)" style="display: none;">
+                    <div id="upLoadPhoto" onclick="openFileInput()">
+                        <img src="">
+                    </div>
+                    <input type="file" id="fileInput" onchange="handleFileSelect(event)" style="display: none;">
                     <div id="upLoadPhoto" onclick="openFileInput()">
                         <img src="">
                     </div>
@@ -68,14 +86,18 @@
                     <input type="file" id="fileInput" onchange="handleFileSelect(event)" style="display: none;">
                 </div>
                 <button type="button" onclick="activateFileInput()">Upload de Arquivo</button>
-                <input type="submit">
+                <input id="value" type="submit" >
             </form>
         </section>
-        <div id="footer">
+       
+    </main>
+    <div id="footer">
+        <div>
             <img src="fotos/lunarfoguete.png" alt="FOGUETE LUNAR">
             <p>&copy; LUNAR 2024.</p>
         </div>
-    </main>
+        
+    </div>
 
     <script>
         function activateFileInput() {
