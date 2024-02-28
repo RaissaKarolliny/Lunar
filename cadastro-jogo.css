@@ -74,6 +74,8 @@ textarea{
     width: 70%;
     border-radius: 30px;
     margin: 4%;
+    overflow-x: auto; /* Adiciona uma barra de rolagem horizontal quando necessário */
+    white-space: nowrap; /* Impede a quebra de linha dos elementos */
 }
 
 #footer{
@@ -111,6 +113,8 @@ textarea{
     align-items: center;
     justify-content: center;
     overflow: hidden !important;
+    display: inline-block; /* Coloca os elementos lado a lado */
+    margin-right: 10px; /* Espaçamento entre os elementos */
     
 }
 #section-mobile-home {
@@ -162,4 +166,5 @@ textarea{
     height: 100%; 
     display: flex;
     object-fit: cover;
+
 }
