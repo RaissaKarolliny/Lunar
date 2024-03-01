@@ -1,220 +1,514 @@
-*{
-    margin: 0 auto;
-    padding: 0 auto;
+
+@media screen and (max-width:912px) {
+    *{
+        margin: 0 auto;
+        padding: 0 auto;
+        
+        }
+    body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: #03051A !important;
+    }
+    nav{
+        display: none;
+    }
+
+
+    main{
+        width: 100%;
+        height: 80vh; 
+        background: #A69DB0; 
+        border-top-right-radius: 130px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+       
+       
+        
+    }
+    header{
+        width: 100%;
+        height: 20vh; 
+        background-color: #03051A; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+    #login{
+       width: 100%;
+       height: 5%;
+       align-items: start;
+       margin-bottom: 2%;
     
     }
-body {
-    width: 100%;
-    overflow: hidden;
-    background-color: #03051A !important;
+    
+    #login label{
+        background-color:#D9D9D9 ;
+        width: 50%;
+        height: 7%;
+       
+        box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
+        border-top-right-radius: 35px;
+        border-bottom-right-radius: 35px;
+        border-bottom-left-radius: 35px;
+        color: rgba(0, 0, 0, 0.80); 
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+        font-size:large; 
+        position: absolute;
+    }
+    button{
+        background-color: transparent !important;
+        border: none !important; 
+    
+    }
+    #section-mobile-home {
+        background-color: #03051A;
+        width: 100%;
+        height: 100%;
+        display: flex;
+       align-items: center;
+       
+       
+     
+    }
+    #section-mobile-home button{
+        height: 100%;
+        width: auto;
+    }
+    
+    
+    header img{
+        width: auto;
+        height: 65%;
+        margin-bottom: 3%;
+       
+    }
+    .btn-nav-mobile-img{
+        max-width: 70%;
+        height: 40%;
+        margin-left: 5%;
+      
+       
+    }
+    .pesquisa-main{
+        width: 100%;
+        height: 13%;
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center;
+        display:flex;
+    }
+    .input-pesquisa-main{
+       width: 70%;
+       height: 100%;
+       background-color: transparent;
+       border: none;
+       z-index: 0;
+    
+    }
+    #div-pesquisa-main{
+        border: none;
+        margin-left: 8%;
+        width: 70%; 
+        height: 40px; 
+        background-color: #D9D9D9;
+        box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
+        border-radius: 50px;
+        display: flex;
+        
+    }
+    
+    #img-scr-main{
+        width: 20%;
+        height: 100%;
+        align-items: center;
+        display: flex;
+        padding-top: 1%;
+        padding-left: 3%;
+    
+      
+    }
+    #img-src-img-main{
+    
+        width: auto;
+        height: 90%;
+       
+    }
+    
+    
+    .filtro{
+        display: flex;
+        margin-right: 18%;
+        background-color: #37264A;
+        box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40)!important;
+        border-radius: 50px!important;
+        position: relative;
+        margin-left: 2%;
+        
+    
+    }
+    .cont-jogos{
+        width: 90%;
+      
+        justify-content: flex-start;
+        display: flex;
+        height: 100%;
+        width: auto;
+        flex-wrap: wrap;
+
+       
+    }
+    .cont-jogos div {
+        width: 30%;
+        height: 20%;
+        overflow: hidden;
+        margin-bottom: 2%;
+    }
+
+    .cont-jogos div img{
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+        box-shadow: 5px 3px 4px rgba(0, 0, 0, 0.40); 
+        object-fit: fill;
+       
+    }
+    #cor-filtro{
+        background-color: #37264A !important;
+        
+    }
+    #cor-filtro a{
+        color: white !important;
+    }
+    #gatilhoMenu{
+        position: relative;
+        z-index: 1;
+    }
+        
+    .conteudoOffCanvas{
+        height: 100vh;
+        width: 40vw;
+        position: fixed;
+        left: -40vw;
+        background-color: #03051A;
+        transition: left 0.3s ease;
+        z-index: 0;
+    }
+    
+    .listaOffCanvas {
+        margin-top: 20%;
+        display: flex;
+        flex-direction: column; /* Dispor os itens verticalmente */
+        justify-content: space-evenly    ; /* Alinhar os itens ao centro horizontalmente */
+        align-items: center; /* Alinhar os itens ao centro verticalmente */
+    }
+    
+    .iconeMenu{
+        margin-top: 60%;
+        margin-bottom: 6%;
+        max-width: 50%;
+        margin-bottom: 10%;
+     
+    }
+    
+    .ativarOffCanvas{
+        transform: none !important;
+        left: 0;
+    }
+    
+    input::placeholder{
+        font-size:medium;
+        text-align: center;
+    }
 }
-main{
-    width: 100%;
-    height: 75vh; 
-    background: #A69DB0; 
-    border-top-right-radius: 130px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+
+@media screen and (min-width:913px) {
+    *{
+        margin: 0 auto;
+        padding: 0 auto;
+        
+        }
+    body {
+        width: 100%;
+        overflow: hidden;
+        background-color: #03051A !important;
+    }
+    main{
+        width: 100%;
+        height: 75vh; 
+        background: #A69DB0; 
+        border-top-right-radius: 130px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Alinhamento no canto superior esquerdo */
+    }
+    header{
+        width: 100%;
+        height: 25vh;
+        background-color: #03051A;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    #login{
+       margin-bottom: 1%;
+       background-color:#D9D9D9 ;
+       width: 15%;
+       height: 30px;
+       box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
+       border-radius: 35px;
+       color: rgba(0, 0, 0, 0.80); 
+       font-size:large;
+       text-align: center;
+      
+      
+    
+    }
+    button{
+        background-color: transparent !important;
+        border: none !important; 
+    
+    }
+    #section-mobile-home {
+       display: none;
+    }
+    #section-mobile-home button{
+        height: 100%;
+        width: auto;
+    }
+    
+    
+    header img{
+        width: auto;
+        margin-top: 1%;
+        height: 70%;
+       
+    }
+    .btn-nav-mobile-img{
+        max-width: auto;
+        height: 70%;
+       
+    }
+    .pesquisa-main{
+        width: 40%;
+        height: 10%;
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center;
+        display:flex;
+        
+    }
+    .input-pesquisa-main{
+       width: 50%;
+       height: 100%;
+       background-color: transparent;
+       border: none;
+       z-index: 0;
+     
+      
+    
+    }
+    #div-pesquisa-main{
+        border: none;
+        width: 50%; 
+        height: 90%; 
+        background-color: #D9D9D9;
+        box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
+        border-radius: 50px;
+        display: flex;
+        
+        
+    }
+    
+    #img-scr-main{
+        width: 20%;
+        height: 100%;
+        align-items: center;
+        display: flex;
+        padding-top: 1%;
+        padding-left: 3%;
+    
+      
+    }
+    #img-src-img-main{
+    
+        width: auto;
+        height: 90%;
+       
+    }
+    
+    
+    .filtro{
+        display: flex;
+        margin-right: 18%;
+        background-color: #37264A;
+        box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40)!important;
+        border-radius: 50px!important;
+        position: relative;
+        margin-left: 2%;
+        margin-top: 0.5%;
+        
+    
+    }
+    .cont-jogos{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+       
+    }
+   
+    .cont-jogos div {
+        width: 10%;
+        height: auto;
+        overflow: hidden;
+        margin: 1%;
+        
+    }
+    .cont-jogos div img{
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+        box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.40); 
+        object-fit: fill;
+      
+    }
+    #cor-filtro{
+        background-color: #37264A !important;
+        
+    }
+    #cor-filtro a{
+        color: white !important;
+    }
+   
+        
+    .conteudoOffCanvas{
+       display: none;
+    }
+    
+    .listaOffCanvas {
+       display: none;
+    }
+    input::placeholder{
+        font-size:medium;
+        text-align: center;
+    }
+    nav{
+        box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
+        color: white;   
+        background-color: #37264A;
+        height: 24%;
+        width: 100%;    
+        display: inline-flex;
+        flex-wrap: nowrap;
+        left: 0;
+        align-items: center; /* Centraliza verticalmente os itens */
+        justify-content: center; /* Centraliza horizontalmente os itens */
+    }
+    .logo{
+        height: 100%;
+        display: flex;
+        background-color: #37264A;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        width: 9%;
+        border-radius: 10px;
+    }
+    .logo p{
+        margin: 0px;
+        font-size: medium;
+    }
    
     
-}
-header{
-    width: 100%;
-    height: 25vh; 
-    background-color: #03051A; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-}
-#login{
-   width: 100%;
-   height: 7%;
-   align-items: start;
-   margin-bottom: 6%;
+    .logo img{
+        height: 100%;
+        margin: 3px;
+     
+       
+    }
+    .menu {
+        background-color: #03051A;
+        height: 100%;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        width: 70%;
+        border-radius: 50px 0 50px 0;
+        margin: 0px;
+    }
+    .iconeMenu {
+        height: 60%;
+        margin: 0;
+    }
+    .menu li{
+        margin-top:2%;
+        height: 90%;
+      
+       
+    }
+    nav form{
+        height: 90%;
+       
 
-}
-
-#login label{
-    background-color:#D9D9D9 ;
-    width: 50%;
-    height: 7%;
-   
-    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
-    border-top-right-radius: 35px;
-    border-bottom-right-radius: 35px;
-    border-bottom-left-radius: 35px;
-    color: rgba(0, 0, 0, 0.80); 
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    font-size:large; 
-    position: absolute;
-}
-button{
-    background-color: transparent !important;
-    border: none !important; 
-
-}
-#section-mobile-home {
-    background-color: #03051A;
-    width: 100%;
-    height: 100%;
-    display: flex;
-   align-items: center;
-   
-   
- 
-}
-#section-mobile-home button{
-    height: 100%;
-    width: auto;
-}
-
-
-header img{
-    width: 40%;
-    height: auto;
-   
-}
-.btn-nav-mobile-img{
-    max-width: auto;
-    height: 100%;
-   
-}
-.pesquisa{
-    width: 100%;
-    height: 13%;
-    flex-direction: row; 
-    justify-content: space-between; 
-    align-items: center;
-    display:flex;
-}
-.input-pesquisa{
-   width: 70%;
-   height: 100%;
-   background-color: transparent;
-   border: none;
-   z-index: 0;
-
-}
-#div-pesquisa{
-    border: none;
-    margin-left: 8%;
-    width: 70%; 
-    height: 40px; 
-    background-color: #D9D9D9;
-    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
-    border-radius: 50px;
-    display: flex;
+    }
+    .input-pesquisa{
+        width: 70%;
+        height: 90%;
+        background-color: transparent;
+        border: none;
+        z-index: 0;
     
-}
-
-#img-scr{
-    width: 20%;
-    height: 100%;
-    align-items: center;
-    display: flex;
-    padding-top: 1%;
-    padding-left: 3%;
-
-  
-}
-#img-src-img{
-
-    width: auto;
-    height: 90%;
-   
-}
-
-
-.filtro{
-    display: flex;
-    margin-right: 18%;
-    background-color: #37264A;
-    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40)!important;
-    border-radius: 50px!important;
-    position: relative;
-    margin-left: 2%;
+     }
+     #div-pesquisa{
+         border: none;
+         margin-left: 1%;
+         height: 90%; 
+         width: 80%;
+         background-color: #D9D9D9;
+         box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
+         border-radius: 50px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+     }
     
-
-}
-.cont-jogos{
-    width: 90%;
-    height: 100%;
-   
-}
-.cont-jogos div{
-    flex-direction: row; /* Alterado para "row" para colocar os elementos na mesma linha */
-    justify-content: space-between; /* Distribui os elementos ao longo da linha */
-    display: flex;
-    margin-bottom: 5%;
-    height: 20%;
-    width: auto;
-    margin-top: 2%;
-}
-.cont-jogos div div{
-    width: 27%;
-    height: 100%;
-    overflow: hidden;
-    
-}
-.cont-jogos div img{
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
-    box-shadow: 5px 3px 4px rgba(0, 0, 0, 0.40); 
-    object-fit: fill;
-}
-#cor-filtro{
-    background-color: #37264A !important;
-    
-}
-#cor-filtro a{
-    color: white !important;
-}
-#gatilhoMenu{
-    position: relative;
-    z-index: 1;
-}
-    
-.conteudoOffCanvas{
-    height: 100vh;
-    width: 40vw;
-    position: fixed;
-    left: -40vw;
-    background-color: #03051A;
-    transition: left 0.3s ease;
-    z-index: 0;
+     #img-scr{
+         width: 20%;
+         height: 80%;
+         align-items: center;
+         display: flex;
+         padding-top: 1%;
+     }
+     #img-src-img{
+         width: 100%;
+         height: 100%;
+     }
+     .perfil{
+        width: auto;
+        height: 100%;
+     }
+     .perfil img{
+        background-color: #D9D9D9;
+        height: 100%;
+        width: auto;
+        border-radius: 50%;
+     }
 }
 
-.listaOffCanvas {
-    margin-top: 20%;
-    display: flex;
-    flex-direction: column; /* Dispor os itens verticalmente */
-    justify-content: space-evenly    ; /* Alinhar os itens ao centro horizontalmente */
-    align-items: center; /* Alinhar os itens ao centro verticalmente */
-}
 
-.iconeMenu{
-    margin-top: 60%;
-    margin-bottom: 6%;
-    max-width: 50%;
-    margin-bottom: 10%;
- 
-}
-
-.ativarOffCanvas{
-    transform: none !important;
-    left: 0;
-}
-
-input::placeholder{
-    font-size:medium;
-    text-align: center;
-}
 
