@@ -14,7 +14,6 @@ main {
     width: 100%;
     height: 83vh;
     background: #A69DB0;
-    border-top-right-radius: 130px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -22,17 +21,50 @@ main {
     align-items: center;
 }
 
-header {
-    width: 100%;
-    height: 7vh;
-    background-color: #03051A;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-   
+header{
+    height: 8vh;
+    width: 100vw;
 }
-header span{
-    width: 98%;
+.input-pesquisa{
+    width: 70%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    z-index: 0;
+
+ }
+ #div-pesquisa{
+     border: none;
+     margin-left: 1%;
+     height: 38px; 
+     background-color: #D9D9D9;
+     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
+     border-radius: 50px;
+     display: flex;
+ }
+
+ #img-scr{
+     width: 20%;
+     height: 100%;
+     align-items: center;
+     display: flex;
+     padding-top: 1%;
+ }
+ #img-src-img{
+     width: 100%;
+     height: 100%;
+ }
+nav{
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
+    color: white;   
+    background-color: #37264A;
+    height: 100%;
+    width: 100%;    
+    display: inline-flex;
+    flex-wrap: nowrap;
+    left: 0;
+    align-items: center; /* Centraliza verticalmente os itens */
+    justify-content: center; /* Centraliza horizontalmente os itens */
 }
 
 button{
@@ -133,38 +165,41 @@ textarea{
     margin-right: 10px; 
     
 }
-
-#gatilhoMenu{
-    position: relative;
-    z-index: 1;
-}
-    
-.conteudoOffCanvas{
-    height: 100vh;
-    width: 40vw;
-    position: fixed;
-    left: -40vw;
-    background-color: #03051A;
-    transition: left 0.3s ease;
-    z-index: 0;
-}
-
-.listaOffCanvas {
-    margin-top: 20%;
+.logo{
+    height: 100%;
     display: flex;
-    flex-direction: column; /* Dispor os itens verticalmente */
-    justify-content: space-evenly    ; /* Alinhar os itens ao centro horizontalmente */
-    align-items: center; /* Alinhar os itens ao centro verticalmente */
+    background-color: #37264A;
+    align-items: center;
+    justify-content: start;
+    width: 10%;
+    border-radius: 10px;
 }
-
-.btn-nav-mobile-img{
-    width: 60%;
+.logo img{
+    margin: 2%;
+    height: 100%;
 }
-
-.ativarOffCanvas{
-    transform: none !important;
-    left: 0;
+.menu {
+    background-color: #03051A;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+    width: 70%;
+    margin: 0%;
+    border-radius: 50px 0 50px 0;
 }
+.iconeMenu {
+    height: 23px;
+    margin: 0;
+}
+.perfil{
+    width: 5%;
+ }
+ .perfil img{
+    background-color: #D9D9D9;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+ }
 #upLoadPhoto img{
     width: 100%;
     height: 100%; 

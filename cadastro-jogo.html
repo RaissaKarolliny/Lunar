@@ -16,28 +16,36 @@
 
 <body>
     <header>
-            <span>
-                <button id="gatilhoMenu"><img src="icones/menu.svg" class="btn-nav-mobile-img" alt=""></button>
-            </span>
-    </header>
-    
-    <main>
-        <div id="menuOffCanvas" class="conteudoOffCanvas">
-            <ul type="none" class="listaOffCanvas">
-                <li>
-                    <a href=""><img class="iconeMenu" src="icones/home.svg" alt=""></a>
-                </li>
+        <nav>
+            <div class="logo">
+                <img src="fotos/lunarfoguete.png" alt="">
+                <h3>LUNAR</h3>
+            </div>
+            <ul type="none" class="menu">
                 <li>
                     <a href=""><img class="iconeMenu" src="icones/geral.svg" alt=""></a>
                 </li>
                 <li>
-                    <a href=""><img class="iconeMenu" src="icones/sobre.svg" alt=""></a>
+                    <a href=""><img class="iconeMenu" src="icones/criador.svg" alt=""></a>
                 </li>
                 <li>
-                    <a href=""><img class="iconeMenu" src="icones/perfil.svg" alt=""></a>
+                    <a href=""><img class="iconeMenu" src="icones/sobre.svg" alt=""></a>
                 </li>
+                <form action="">
+                    <div id="div-pesquisa">
+                        <button type="submit" id="img-scr"><img id="img-src-img" src="icones/srcescuro.svg" alt=""></button>
+                        <input class="input-pesquisa" type="text" placeholder="Buscar por Jogo">
+                    </div>
+                </form>
             </ul>
-        </div>
+            <div class="perfil">
+                <img class="icone" src="https://avatars.githubusercontent.com/u/93449870?v=4">
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        
         <section>
             <form action="">
                 <input type="text" placeholder="Nome do jogo">
@@ -93,7 +101,7 @@
     </main>
     <div id="footer">
         <div>
-            <img src="fotos/lunarfoguete.png" alt="FOGUETE LUNAR">
+            
             <p>&copy; LUNAR 2024.</p>
         </div>
         
