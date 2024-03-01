@@ -157,10 +157,7 @@ footer{
     margin-right: 10px; 
     
 }
-<<<<<<< HEAD
 
-
-=======
 .logo{
     height: 100%;
     display: flex;
@@ -196,7 +193,7 @@ footer{
     width: 40px;
     border-radius: 50%;
  }
->>>>>>> 2f31916dd83d953a3bf4a46625e252c26edb965e
+
 #upLoadPhoto img{
     width: 100%;
     height: 100%; 
