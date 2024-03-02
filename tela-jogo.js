@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function(){
     var meuTitulo = document.getElementById('descricao-jogo-titulo');
     var minhaAvaliacao = document.getElementById('descricao-jogo-icone-avaliacao')
 
-
     var alturaImagem = minhaImagem.offsetHeight;
     var alturaTitulo = meuTitulo.offsetHeight;
     var alturaAvaliacao = minhaAvaliacao.offsetHeight;
@@ -12,3 +11,8 @@ document.addEventListener('DOMContentLoaded', function(){
 
     meuParagrafo.style.maxHeight = alturaParagrafo + 'px';
 });
+
+function comentar(){
+    const conteudo = document.getElementById('targgetComenta');
+    conteudo.classList.toggle('comenta');
+}

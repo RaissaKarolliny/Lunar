@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+    <script src="tela-jogo.js"></script>
     <title>Lunar</title>
 </head>
 
@@ -27,14 +28,14 @@
         <section id="descricao-jogo-section">
             <div id="descricao-jogo-div-imagem-e-texto">
                 <div id="descricao-jogo-coluna-1">
-                    <img id="descricao-jogo-imagem" src="fotos/hollow.png" alt="imagem do jogo">
+                    <img id="descricao-jogo-imagem" src="fotos/Hollow_Knight.png" alt="imagem do jogo">
                 </div>
                 <div id="descricao-jogo-coluna-2">
                     <h3 id="descricao-jogo-titulo">Hollow Knight</h3>
                     <div id="descricao-jogo-div-paragrafo">
                         <p id="descricao-jogo-paragrafo">Forje seu caminho em Hollow Knight! Uma aventura de ação épica em um vasto reino arruinado de insetos e heróis. Explore cavernas serpenteantes, lute contra criaturas malignas e alie-se a insetos bizarros num estilo clássico 2D desenhado à mão.</p>
                     </div>
-                    <img id="descricao-jogo-icone-avaliacao" src="/icones/estrela-avalia.svg" alt="imagem-avaliação-jogo">
+                    <img id="descricao-jogo-icone-avaliacao" src="icones/estrelas-avaliacao.svg" alt="imagem-avaliação-jogo">
                 </div>
             </div>
 
@@ -69,37 +70,115 @@
                     </button>
                 </div>
             </div>
-
-            <span id="btn-download-mobile">
-                <button>
-                    <img id="btn-download-img" src="icones/setadown.svg"  alt="">
-                </button>
-            </span>
         </section>
+
 
         <section id="section-comentarios">
             <div id="div-btn-titulo-comentarios">
                 <span id="btn-comentar">
-                    <button>
+                    <button onclick="comentar()">
                         <img id="img-btn-comentarios" src="icones/plus.svg" alt="">
                     </button>
                 </span>
                 <div id="div-titulo-do-botao-comentar">
-                    <h3 id="titulo-do-botao-comentar">
-                        COMENTAR
-                    </h3>
+                    <p id="titulo-do-botao-comentar">
+                        <b>COMENTAR</b>
+                    </p>
                 </div>
             </div>
 
-            <div id="div-dos-comentarios">
+            <div id="div-dos-comentarios row">
+                <div class="comentario comenta" id="targgetComenta">
+                    <form action="" style="width: 100%;">
+
+                    
+                    <div class="div-do-header-do-comentario">
+                        <div class="div-foto-perfil-do-comentario">
+                            <img class="foto-perfil-do-comentario" src="icones/icone perfil.svg" alt="foto perfil">
+                        </div>
+                        <div class="div-perfil-e-avaliacao-do-comentario">
+                            <div class="div-nome-do-usuario-do-comentario">
+                                <h5 class="nome-do-usuario-do-comentario"><b>nomeUsuario</b></h5>
+                            </div>
+                            <div class="div-avaliacao-do-comentario">
+                                <img class="avaliacao-do-comentario" src="icones/estrelas-avaliacao.svg" alt="">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="div-do-paragrafo-do-comentario">
+                        <p class="paragrafo-do-comentario"> <textarea placeholder="COMENTÁRIO..."  style="width: 100%;"></textarea></p>
+                    </div>
+                    <input  type="submit">
+                </form>
+                </div>
                 <div class="comentario">
                     <div class="div-do-header-do-comentario">
+                        <div class="div-foto-perfil-do-comentario">
+                            <img class="foto-perfil-do-comentario" src="icones/icone perfil.svg" alt="foto perfil">
+                        </div>
                         <div class="div-perfil-e-avaliacao-do-comentario">
                             <div class="div-nome-do-usuario-do-comentario">
                                 <h5 class="nome-do-usuario-do-comentario"><b>Josué caçador de casadas</b></h5>
                             </div>
                             <div class="div-avaliacao-do-comentario">
-                                <img class="avaliacao-do-comentario" src="/icones/estrelas-avaliacao.svg" alt="">
+                                <img class="avaliacao-do-comentario" src="icones/estrelas-avaliacao.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="div-data-e-likes-do-comentario">
+                            <div class="div-data-do-comentario">
+                                <p class="paragrafo-data-do-comentario"><b>25/02/2024</b></p>
+                            </div>
+                            <div class="div-likes-do-comentario">
+                                <img class="likes-do-comentario" src="icones/icone-like.svg">
+                                <p class="paragrafo-likes-do-comentario"><b>1.2K</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div-do-paragrafo-do-comentario">
+                        <p class="paragrafo-do-comentario"> E  BOSTA ACABOU COM MINHA FAMÍLIA, E COLOCOU FOGO NO MEU CACHORRO, 10/10</p>
+                    </div>
+                </div>
+
+                <div class="comentario">
+                    <div class="div-do-header-do-comentario">
+                        <div class="div-foto-perfil-do-comentario">
+                            <img class="foto-perfil-do-comentario" src="icones/icone perfil.svg" alt="foto perfil">
+                        </div>
+                        <div class="div-perfil-e-avaliacao-do-comentario">
+                            <div class="div-nome-do-usuario-do-comentario">
+                                <h5 class="nome-do-usuario-do-comentario"><b>Josué caçador de casadas</b></h5>
+                            </div>
+                            <div class="div-avaliacao-do-comentario">
+                                <img class="avaliacao-do-comentario" src="icones/estrelas-avaliacao.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="div-data-e-likes-do-comentario">
+                            <div class="div-data-do-comentario">
+                                <p class="paragrafo-data-do-comentario"><b>25/02/2024</b></p>
+                            </div>
+                            <div class="div-likes-do-comentario">
+                                <img class="likes-do-comentario" src="icones/icone-like.svg">
+                                <p class="paragrafo-likes-do-comentario"><b>1.2K</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div-do-paragrafo-do-comentario">
+                        <p class="paragrafo-do-comentario">QUE JOGO LIXO, PREFIRO COMER LIXO TÔXICO DO QUE TER QUE JOGAR ISSO DE NOVO, ESSE PDAÇO DE BOSTA ACABOU COM MINHA FAMÍLIA, E COLOCOU FOGO NO MEU CACHORRO, 10/10</p>
+                    </div>
+                </div>
+
+                <div class="comentario">
+                    <div class="div-do-header-do-comentario">
+                        <div class="div-foto-perfil-do-comentario">
+                            <img class="foto-perfil-do-comentario" src="icones/icone perfil.svg" alt="foto perfil">
+                        </div>
+                        <div class="div-perfil-e-avaliacao-do-comentario">
+                            <div class="div-nome-do-usuario-do-comentario">
+                                <h5 class="nome-do-usuario-do-comentario"><b>Josué caçador de casadas</b></h5>
+                            </div>
+                            <div class="div-avaliacao-do-comentario">
+                                <img class="avaliacao-do-comentario" src="icones/estrelas-avaliacao.svg" alt="">
                             </div>
                         </div>
                         <div class="div-data-e-likes-do-comentario">
