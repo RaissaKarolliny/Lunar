@@ -1,4 +1,4 @@
-@media screen and (max-width:415px){
+@media screen and (max-width:1261px){
     #bodyDasktop{
         display: none;
     }
@@ -259,7 +259,7 @@
     
 }
 
-@media screen and (min-width:416px){
+@media screen and (min-width:1262px){
 #bodyMobile{
    display: none ;
 }
@@ -282,12 +282,22 @@ body {
 header{
     height: 50vh;
     width: 100vw;
+  
+}
+main{
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+
+}    
+
 }
 nav{
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
     color: white;   
     background-color: #37264A;
-    height: 15%;
+    height: 17%;
     width: 100%;    
     display: inline-flex;
     flex-wrap: nowrap;
@@ -398,14 +408,18 @@ header section p{
     border-radius: 50px 0 50px 0;
 }
 .iconeMenu {
-    height: 25px;
+    height: 35px;
     margin: 0;
 }
 .criador{
     height: 100%;
 
 }
-
+nav form{
+    width: 30%;
+   
+ 
+}
 .input-pesquisa{
     width: 70%;
     height: 100%;
@@ -417,31 +431,36 @@ header section p{
  #div-pesquisa{
      border: none;
      margin-left: 1%;
-     height: 38px; 
+     height: 7%; 
+     width: 60%;
      background-color: #D9D9D9;
      box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
      border-radius: 50px;
      display: flex;
+     align-items: center;
+     justify-content: center;
  }
 
  #img-scr{
-     width: 20%;
-     height: 100%;
+     width: 25%;
+     height: 80%;
      align-items: center;
      display: flex;
      padding-top: 1%;
+     padding-left: 5%;
+     justify-content: center;
  }
  #img-src-img{
      width: 100%;
      height: 100%;
  }
  .perfil{
-    width: 5%;
+    width: 10%;
+    height: 70%;
  }
  .perfil img{
     background-color: #D9D9D9;
-    height: 40px;
-    width: 40px;
+    height: 100%;
+    width: auto;
     border-radius: 50%;
  }
-}
