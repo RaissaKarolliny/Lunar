@@ -12,7 +12,7 @@ html {
 body {
     background-color: #03051A;
     width: 100vw;
-    overflow: hidden;
+    overflow: auto;
 }
 
 button{
@@ -130,10 +130,11 @@ button{
 }
 
 #btn-download-img{
-    height: 5vh;
+    height: 3vh;
 }
 
 #section-comentarios{
+    border-radius: 40px 40px 0px 0px;
     background-color: #A69DB0;
     display: flex;
     flex-direction: column;
@@ -144,7 +145,7 @@ button{
     flex-direction: row;
     width: fit-content;
     margin: 10px auto 10px 39px;
-    border-radius: 10px 40px 10px 40px;
+    border-radius: 10px 25px 10px 25px;
     background-color: #d9d9d9;
 }
 
@@ -152,13 +153,13 @@ button{
     display: flex;
     height: fit-content;
     width: fit-content;
-    padding: 10px;
-    border-radius: 10px 40px 0px 40px;
+    border-radius: 10px 25px 0px 25px;
     background-color: #37264A;
 }
 
 #img-btn-comentarios{
-    height: 5vh;
+    margin: 10px;
+    height: 3vh;
 }
 
 #div-titulo-do-botao-comentar {
@@ -168,6 +169,7 @@ button{
 }
 
 #titulo-do-botao-comentar{
+    font-size: 12px;
     margin: 10px 20px 10px 20px;
 }
 
@@ -181,13 +183,14 @@ button{
 .comentario{
     display: flex;
     flex-direction: column;
-    border-radius: 30px 10px 40px 10px;
+    border-radius: 2.5vh 10px 50px 10px;
     overflow: hidden;
     margin: 5px auto 5px 0px;
     background-color: #37264A;
 }
 
 .div-do-header-do-comentario{
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -195,11 +198,30 @@ button{
     background-color: #03051A;
 }
 
+.div-foto-perfil-do-comentario{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    width: 5vh;
+    margin: 0px auto 0px 0px;
+    background-color: #d9d9d9;
+    border-radius: 2.5vh;
+}
+
+.foto-perfil-do-comentario{
+    height: 75%;
+}
+
 .div-perfil-e-avaliacao-do-comentario{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0px 20px 0px auto;
+    margin: 0px auto 0px 2.5vh;
     height: 100%;
 }
 
@@ -207,23 +229,27 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 50%;
+    border-radius: 0px 15px 15px 0px;
     background-color: #d9d9d9;
 }
 
 .nome-do-usuario-do-comentario{
-    margin: 5px 10px 5px 10px;
+    margin: 8px 10px 8px 4.5vh;
     font-size: 12px;
     color: #03051A;
 }
 
 .div-avaliacao-do-comentario{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    margin: 0px auto 0px 4.5vh;
+    height: 50%;
 }
 
 .avaliacao-do-comentario{
-    margin: 5px;
+    margin: 8px 0px 8px 0px;
     width: 20vw;
 }
 
@@ -270,7 +296,7 @@ button{
 
 .paragrafo-do-comentario{
     color: #d9d9d9;
-    margin: 10px 13px 13px 10px;
+    margin: 10px 13px 20px 10px;
     font-size: 12px;
     text-align: justify;
 }

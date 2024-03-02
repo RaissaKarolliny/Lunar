@@ -1,0 +1,169 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    width: 100vw;
+}
+
+#navbar {
+    height: 10vh;
+}
+
+main {
+
+}
+
+#section-descricao-do-jogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #03051A;
+}
+
+#div-descricao-do-jogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 50px 0px 50px 0px;
+}
+
+#div-da-img-texto-e-avaliacao-do-jogo {
+    display: flex;
+    flex: row;
+}
+
+#div-da-img-do-jogo {
+    margin: 0px 60px 0px 0px;
+}
+
+#img-do-jogo{
+    height: 45vh;
+}
+
+#div-do-texto-e-da-avaliacao-do-jogo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#div-do-titulo-do-jogo {
+    margin: 0px auto 0px 0px
+}
+
+#titulo-do-jogo {
+    color: #d9d9d9;
+
+}
+
+#div-do-paragrafo-do-jogo {
+    margin: 10px 0px 10px 0px;
+}
+
+#paragrafo-do-jogo {
+    color:#d9d9d9;
+    text-align: justify;
+}
+
+#div-avaliacao-e-botao-download {
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#div-avaliacao-do-jogo {
+    display: flex;
+    margin: 0px auto 0px 0px;
+}
+
+#img-avaliacao-jogo {
+
+}
+
+#div-botao-download {
+    display: flex;
+    margin: 0px 0px 0px auto;
+}
+
+#img-botao-download {
+    height: 10vh;
+}
+
+
+
+
+
+#div-do-carrossel {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px 0px 50px 0px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.carrossel {
+    overflow: hidden;
+    width: 47vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    display: flex;
+}
+
+.slide div{
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 30px;
+    margin: 0px 1vw 0px 0px;
+}
+
+.slide div img {
+    width: 15vw;
+    height: auto;
+}
+
+.div-botao-carrossel {
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+}
+
+#btn-carrossel-prev,
+#btn-carrossel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.btn-prev {
+    left: 10px;
+}
+
+.btn-next {
+    right: 10px;
+}

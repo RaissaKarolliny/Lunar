@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Jogo</title>
+    <link rel="stylesheet" href="tela-jogo-desktop.css">
+</head>
+<body>
+    <header>
+        <div id="navbar"></div>
+    </header>
+
+    <main>
+        <section id="section-descricao-do-jogo">
+            <div id="div-descricao-do-jogo">
+                <div id="div-da-img-texto-e-avaliacao-do-jogo">
+                    <div id="div-da-img-do-jogo">
+                        <img id="img-do-jogo" src="fotos/Hollow_Knight.png" alt="imagem-jogo">
+                    </div>
+                    <div id="div-do-texto-e-da-avaliacao-do-jogo">
+                        <div id="div-do-titulo-do-jogo">
+                            <h2 id="titulo-do-jogo">Hollow Knight</h2>
+                        </div>
+                        <div id="div-do-paragrafo-do-jogo">
+                            <p id="paragrafo-do-jogo">
+                                Forje seu caminho em Hollow Knight! Uma aventura de ação épica em um vasto reino arruinado de insetos e heróis. Explore cavernas serpenteantes, lute contra criaturas malignas e alie-se a insetos bizarros num estilo clássico 2D desenhado à mão.
+                            </p>
+                        </div>
+                        <div id="div-avaliacao-e-botao-download">
+                            <div id="div-avaliacao-do-jogo">
+                                <img id="img-avaliacao-jogo" src="icones/estrelas-avaliacao.svg" alt="imagem-avaliação-jogo">
+                            </div>
+                            <div id="div-botao-download">
+                                <img id="img-botao-download" src="icones/download.svg" alt="imagem-botao-download">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="div-do-carrossel">
+                    <div class="div-botao-carrossel">
+                        <button id="btn-carrossel-prev" onclick="moverCarrossel(-1)">
+                            <img src="icones/seta_esquerda_carrossel.svg"  alt="botao_esquerdo_carrosel">
+                        </button>
+                    </div>
+                    <div class="carrossel">
+                        <div class="slide">
+                            <div class="div-imagem-carrossel">
+                                <img src="fotos/Hollow_Knight_carrossel_img_1.jpg" alt="Imagem 1">
+                            </div>
+                            <div class="div-imagem-carrossel">
+                                <img src="fotos/Hollow_Knight_carrossel_img_2.jpg" alt="Imagem 2">
+                            </div>
+                            <div class="div-imagem-carrossel">
+                                <img src="fotos/Hollow_Knight_carrossel_img_3.jpg" alt="Imagem 3">
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="div-imagem-carrossel">
+                                <img src="fotos/Hollow_Knight_carrossel_img_4.jpg" alt="Imagem 4">
+                            </div>
+                            <div>
+                                <img src="fotos/Hollow_Knight_carrossel_img_5.jpg" alt="Imagem 5">
+                            </div>
+                            <div>
+                                <img src="fotos/Hollow_Knight_carrossel_img_6.jpg" alt="Imagem 6">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div-botao-carrossel">
+                        <button id="btn-carrossel-next" onclick="moverCarrossel(1)">
+                            <img src="icones/seta_direita_carrossel.svg" alt="botao_direito_carrossel">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+</html>
