@@ -8,8 +8,162 @@
     <link rel="stylesheet" href="home-dasktop.css">
     <script src="script.js"></script>
 </head>
-
 <body>
+    
+
+<section id="bodyMobile">
+    <header>
+       <section id="section-mobile-home">
+           <span class="btn-nav-mobile">
+               <button id="gatilhoMenu">
+                   <img src="icones/menu.svg" class="btn-nav-mobile-img" alt="">
+               </button>
+           </span>
+
+           <img id="logo-astronauta" src="fotos/img.png" alt="logo astronauta">
+
+           <span class="btn-src-mobile">
+               <button href="">
+                   <img src="icones/src.svg" class="btn-src-mobile-img" alt="">
+               </button>
+           </span>
+
+           <div id="menuOffCanvas" class="conteudoOffCanvas">
+               <ul class="listaOffCanvas">
+                   <li>
+                       <a href=""><img class="iconeMenu" src="icones/home.svg" alt=""></a>
+                   </li>
+                   <li>
+                       <a href=""><img class="iconeMenu" src="icones/geral.svg" alt=""></a>
+                   </li>
+                   <li>
+                       <a href=""><img class="iconeMenu" src="icones/sobre.svg" alt=""></a>
+                   </li>
+                   <li>
+                       <a href=""><img class="iconeMenu" src="icones/perfil.svg" alt=""></a>
+                   </li>
+               </ul>
+           </div>
+
+       </section>
+   </header>
+
+ 
+   <main>
+       <section id="section-criador-lunar">
+           <div id="div-titulo-criador-lunar">
+               <h3 id="titulo-criador-lunar" class="texto-criador-lunar">
+                 Criador Lunar
+               </h3>
+           </div>
+           <div id="div-descricao-criador-lunar">
+               <span id="btn-estrela-mobile">
+                   <button >
+                       <img src="icones/estrela.svg" class="btn-estrela-mobile-img" alt="">  
+                   </button>
+               </span>
+               <p id="paragrafo-criador-lunar" class="texto-criador-lunar">
+               A gente tá só esperando você. Vem ser um dos nossos criadores de conteúdo! Poste seu jogo para que outros avaliem!
+               </p>
+           </div>
+       </section>
+
+       <div id="jogos-da-semana-card">
+           <h4>Jogos da Semana</h4>
+       </div>
+
+       <div class="carousel-container">
+           <div class="cards-container">
+               <div id="jogo-container-1" class="jogo-container">
+                   <a href="caminho-jogo1" class="card-link">
+                       <div class="card">
+                           <img src="icones/cupthead.jpg" alt="Imagem 1">
+                       </div>
+                   </a>
+                   <span class="btn-carrossel-mobile">
+                       <button>
+                           <img src="icones/botao-detalhes.svg" class="btn-carrossel-mobile-img" alt="">  
+                       </button>
+                   </span>
+               </div>
+               <div class="jogo-container">
+                   <a href="/caminho-jogo2" class="card-link">
+                       <div class="card">
+                           <img src="icones/hollow.png" alt="Imagem 2">
+                       </div>
+                   </a>
+                   <span class="btn-carrossel-mobile">
+                       <button>
+                           <img src="icones/botao-detalhes.svg" class="btn-carrossel-mobile-img" alt="">  
+                       </button>
+                   </span>
+               </div>
+               <div class="jogo-container">
+                   <a href="/caminho-jogo1" class="card-link">
+                       <div class="card">
+                           <img src="icones/cupthead.jpg" alt="Imagem 1">
+                       </div>
+                   </a>
+                   <span class="btn-carrossel-mobile">
+                       <button>
+                           <img src="icones/botao-detalhes.svg" class="btn-carrossel-mobile-img" alt="">  
+                       </button>
+                   </span>
+               </div>
+               <div class="jogo-container">
+                   <a href="/caminho-jogo2" class="card-link">
+                       <div class="card">
+                           <img src="icones/hollow.png" alt="Imagem 2">
+                       </div>
+                   </a>
+                   <span class="btn-carrossel-mobile">
+                       <button>
+                           <img src="icones/botao-detalhes.svg" class="btn-carrossel-mobile-img" alt="">  
+                       </button>
+                   </span>
+               </div>
+               <div class="jogo-container">
+                   <a href="/caminho-jogo1" class="card-link">
+                       <div class="card">
+                           <img src="icones/cupthead.jpg" alt="Imagem 1">
+                       </div>
+                   </a>
+                   <span class="btn-carrossel-mobile">
+                       <button>
+                           <img src="icones/botao-detalhes.svg" class="btn-carrossel-mobile-img" alt="">  
+                       </button>
+                   </span>
+               </div>
+               <div class="jogo-container">
+                   <a href="/caminho-jogo2" class="card-link">
+                       <div class="card">
+                           <img src="icones/hollow.png" alt="Imagem 2">
+                       </div>
+                   </a>
+                   <span class="btn-carrossel-mobile">
+                       <button>
+                           <img src="icones/botao-detalhes.svg" class="btn-carrossel-mobile-img" alt="">  
+                       </button>
+                   </span>
+               </div>
+           </div>
+       </div>
+
+       <div id="detalhes-modal" class="modal">
+               <span class="fechar" onclick="fecharDetalhes">&times;</span>
+           <img id="imagem-detalhes" src="" alt="Imagem Detalhes">
+       </div>
+    
+   </main>
+
+
+
+
+   <footer>
+
+   </footer>
+</section>
+<section id="bodyDasktop">
     <header>
         <nav>
             <div class="logo">
@@ -18,16 +172,13 @@
             </div>
             <ul type="none" class="menu">
                 <li>
-                    <a href=""><img class="iconeMenu" src="icones/medalha.svg" alt=""></a>
-                </li>
-                <li>
                     <a href=""><img class="iconeMenu" src="icones/geral.svg" alt=""></a>
                 </li>
                 <li>
-                    <a href=""><img class="iconeMenu" src="icones/sobre.svg" alt=""></a>
+                    <a href=""><img class="iconeMenu" src="icones/criador.svg" alt=""></a>
                 </li>
                 <li>
-                    <a href=""><img class="iconeMenu" src="icones/estrela.svg" alt=""></a>
+                    <a href=""><img class="iconeMenu" src="icones/sobre.svg" alt=""></a>
                 </li>
                 <form action="">
                     <div id="div-pesquisa">
@@ -63,6 +214,6 @@
             <img class="estrelas" src="fotos/estrelinhas.png" alt="">
         </section>
     </header>
+</section>
 </body>
-
 </html>
