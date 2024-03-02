@@ -119,7 +119,7 @@ main {
 
 .carrossel {
     overflow: hidden;
-    width: 47vw;
+    width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -144,8 +144,7 @@ main {
 
 .div-botao-carrossel {
     display: flex;
-    height: fit-content;
-    width: fit-content;
+    width: 10%;
 }
 
 #btn-carrossel-prev,

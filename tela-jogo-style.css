@@ -4,6 +4,12 @@
 
 }
 
+textarea, textarea::placeholder{
+    background-color: transparent;
+    border:none;
+    color: white;
+}
+
 html {
     height: 100%;
     width: 100%;
@@ -12,13 +18,34 @@ html {
 body {
     background-color: #03051A;
     width: 100vw;
-    overflow: auto;
+
 }
+
+
 
 button{
     background-color: transparent !important;
     border: none !important; 
 }
+
+.comenta {
+    display: none !important;
+ /* Adicionando uma transição suave */
+}
+
+input[type="submit"] {
+    background-color: #d9d9d9; /* Cor de fundo */
+    color: #03051A; /* Cor do texto */
+    border: none; /* Removendo a borda */
+    padding: 10px 20px; /* Espaçamento interno */
+    cursor: pointer; /* Mudando o cursor ao passar por cima */
+    border-radius: 10px 25px 10px 0px;
+    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+}
+
+
+
+
 
 .btn-nav-mobile{
     background-color: #0305AA;
@@ -184,13 +211,13 @@ button{
     align-items: flex-start;
     width: 80%;
 }
-
+    
 .comentario{
     display: flex;
     flex-direction: column;
     border-radius: 2.5vh 10px 50px 10px;
     overflow: hidden;
-    margin: 5px auto 5px 0px;
+    margin: 3.5%; 
     background-color: #37264A;
 }
 
@@ -235,6 +262,7 @@ button{
     align-items: center;
     justify-content: center;
     height: 50%;
+    position: absolute;
     border-radius: 0px 15px 15px 0px;
     background-color: #d9d9d9;
 }
@@ -250,6 +278,7 @@ button{
     align-items: flex-start;
     justify-content: center;
     margin: 0px auto 0px 4.5vh;
+    margin-top: 4vh;
     height: 50%;
 }
 
@@ -284,9 +313,6 @@ button{
     align-items: center;
 }
 
-.likes-do-comentario{
-
-}
 
 .paragrafo-likes-do-comentario{
     margin: 0px;
@@ -296,6 +322,7 @@ button{
 
 .div-do-paragrafo-do-comentario{
     display: flex;
+    width: 100%;
     background-color: #37264A;
 }
 
@@ -303,5 +330,7 @@ button{
     color: #d9d9d9;
     margin: 10px 13px 20px 10px;
     font-size: 12px;
+    width: 100%;
+
     text-align: justify;
 }
