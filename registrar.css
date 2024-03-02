@@ -185,8 +185,8 @@
     
     #registrar label {
         background-color: #D9D9D9;
-        width: 20%;
-        height: 6%;
+        width: 25%;
+        height: 5%;
         box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40);
         border-top-right-radius: 35px;
         border-bottom-right-radius: 35px;
@@ -195,7 +195,7 @@
         align-items: center;
         justify-content: center;
         display: flex;
-        font-size: xx-large;
+        font-size: large;
         position: absolute;
     }
     
@@ -207,12 +207,14 @@
     .formulario form input {
         width: 50%;
         height: 50px;
-        background: #37264A;
+        background-color: #37264A;
         box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40);
         border-radius: 60px;
         border: none;
         margin: 1%;
         font-size: small;
+        color: white;
+        text-align: center;
     }
     
     .formulario form {
