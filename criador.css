@@ -1,4 +1,3 @@
-
 @media screen and (max-width:768px) {
     #bodyDasktop {
         display: none;
@@ -242,8 +241,10 @@
     }
 
     .devs {
+      
         margin-bottom: 3%;
         display: flex;
+        
         flex-wrap: wrap;
         background-color: #03051A;
         height: 500px;
@@ -270,10 +271,9 @@
     }
 
     .devs div {
-        margin-top: 1%;
         overflow: auto;
         position: absolute;
-        height: 80%;
+        height: 81%;
         width: 100%;
         color: #A69DB0;
         border-top-right-radius: 20px;
@@ -283,7 +283,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 1% ;
+        padding: 1% 1% 0 1%;
         text-align: center;
        
     }
@@ -351,7 +351,7 @@
         justify-content: center;
         border-radius: 0px 0px 0px 100px;
         align-items: center;
-        /* Centraliza verticalmente */
+      
         overflow: hidden;
 
     }
@@ -429,12 +429,6 @@
         padding: 1%;
     }
 
-    header section p {
-        color: #D9D9D9;
-        font-size: large;
-        margin: 1%;
-        text-align: start;
-    }
 
     #criador-btn {
         margin-top: 2%;
@@ -446,23 +440,8 @@
         color: #03051A !important;
         font-size: medium;
         margin-left: 0%;
-
-
     }
 
-    #criador-btn button {
-        width: 100%;
-        height: 100%;
-        text-align: start;
-
-    }
-
-    #criador-btn img {
-        width: auto;
-        height: 100%;
-        margin: 0px;
-        transform: scaleX(1);
-    }
 
     body section {
         height: 100%;
@@ -473,52 +452,32 @@
         margin-top: 1.5%;
         height: 48vh;
         width: 100%;
-      
         display: flex;
         flex-direction: row;
     }
-
-    .devs {
-        display: flex;
-        flex-wrap: wrap;
-        background-color: #03051A;
+    .imagen{
         height: 100%;
-        width: 20%;
-        border-radius: 5px 80px 40px 40px;
-        position: relative;
+        width: 50%;
+        border-top-right-radius: 150px;
+        background-color: #03051A;
+        display: flex;
         overflow: hidden;
     }
-
-    .devs span {
-        background-color: #D9D9D9;
-        border-radius: 5px 40px 40px 40px;
-        height: 17%;
-        font-weight: bold;
-        color: #37264A;
-        float: left;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 50%;
-        position: absolute;
-        top: 0;
-        left: 0;
+    .imagen img{
+        height: 100%;
     }
-
-    .devs div {
-        position: absolute;
-        height: 81%;
-        width: 100%;
-        color: #A69DB0;
-        border-top-right-radius: 20px;
-        background: #37264A;
-        bottom: 0%;
-        overflow: auto;
+    .texto{
+        height: 100%;
+        width: 50%;
+        color: #D9D9D9;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         text-align: center;
+    }
+    .texto img{
+        height: 50%;
     }
 
     .logo {
@@ -545,14 +504,53 @@
         border-radius: 50px 0 50px 0;
     }
 
+    .devs {
+        margin-bottom: 3%;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #03051A;
+        height: 500px;
+        width: 80%;
+        border-radius: 5px 80px 40px 40px;
+        position: relative;
+        overflow: auto;
+    }
+
+    .devs span {
+        background-color: #D9D9D9;
+        border-radius: 5px 40px 40px 40px;
+        height: 10%;
+        font-weight: bold;
+        color: #37264A;
+        float: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .devs div {
+        overflow: auto;
+        position: absolute;
+        height: 81%;
+        width: 100%;
+        color: #A69DB0;
+        border-top-right-radius: 20px;
+        background: #37264A;
+        bottom: 0% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
     .iconeMenu {
         height: 25px;
         margin: 0;
-    }
-
-    .criador {
-        height: 100%;
-
     }
 
     .input-pesquisa {
@@ -617,4 +615,3 @@ html {
     height: 100%;
     width: 100%;
 }
-

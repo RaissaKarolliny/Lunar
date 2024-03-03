@@ -1,5 +1,5 @@
 
-@media screen and (max-width:912px) {
+@media screen and (max-width:768px) {
     *{
         margin: 0 auto;
         padding: 0 auto;
@@ -230,7 +230,7 @@
     }
 }
 
-@media screen and (min-width:913px) {
+@media screen and (min-width:769px) {
     *{
         margin: 0 auto;
         padding: 0 auto;
@@ -510,3 +510,11 @@
 
     }
 
+    img{
+        pointer-events: none;
+    }
+    html {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        height: 100%;
+        width: 100%;
+    }

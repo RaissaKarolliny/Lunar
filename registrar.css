@@ -1,4 +1,4 @@
-@media screen and (max-width:1009px){
+@media screen and (max-width:768px){
     * {
         margin: 0 auto;
         padding: 0 auto;
@@ -144,7 +144,7 @@
         font-weight: 150 !important;
     }
 }
-@media screen and (min-width:1010px){
+@media screen and (min-width:769px){
     * {
         margin: 0 auto;
         padding: 0 auto;
@@ -288,7 +288,23 @@
     }
 }
 
+img{
+    pointer-events: none;
+}
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+}
 
+img{
+    pointer-events: none;
+}
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+}
 
 
 
