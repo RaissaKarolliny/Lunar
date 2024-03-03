@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre</title>
+    <script src="script.js"></script>
+
     <link rel="stylesheet" href="sobre.css">
     <script src="sobre.js"></script>
 
@@ -88,10 +90,14 @@
     <section id="bodyDasktop">
         <header>
             <nav>
-                <div class="logo">
-                    <a href="home.html"></a>
-                    <img src="fotos/lunarfoguete.png" alt="">
-                    <h1>LUNAR</h1>
+                <div class="logo" id="redireciona"> 
+                    <script>
+                        document.getElementById("redireciona").addEventListener("click", function() {
+                            window.location.href = "home.html";
+                        });
+                    </script>
+                        <img src="fotos/lunarfoguete.png" alt="">
+                        <h4>LUNAR</h4>
                 </div>
                 <ul type="none" class="menu">
                     <li>
