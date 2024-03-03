@@ -17,9 +17,6 @@ body {
     height: 10vh;
 }
 
-main {
-
-}
 
 #section-descricao-do-jogo {
     display: flex;
@@ -89,9 +86,6 @@ main {
     margin: 0px auto 0px 0px;
 }
 
-#img-avaliacao-jogo {
-
-}
 
 #div-botao-download {
     display: flex;
@@ -101,10 +95,6 @@ main {
 #img-botao-download {
     height: 10vh;
 }
-
-
-
-
 
 #div-do-carrossel {
     position: relative;
