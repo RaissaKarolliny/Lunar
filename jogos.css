@@ -113,7 +113,7 @@
             width: auto;
         }
         .cont-jogos div div{
-            width: 27%;
+            width: auto;
             height: 100%;
             overflow: hidden;
             
@@ -186,8 +186,12 @@
             }
             header{
                 width: 100%;
-                height: 8vh;
+                height: 7vh;
                 background-color: #03051A;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+        
                
         
             }
@@ -282,20 +286,21 @@
             .cont-jogos div{
                 flex-direction: row; /* Alterado para "row" para colocar os elementos na mesma linha */
                 display: flex;
-                height: 16%;
-                align-items: flex-end;
+                height: 18%;
+                
                margin: 0px;
               justify-content: space-evenly;
+              margin-bottom: 1%;
             }
             .cont-jogos div div{
-                width: 10%;
-                height: 90%;
+                width: auto;
+                height: 100%;
                 overflow: hidden;
               
                 
             }
             .cont-jogos div img{
-                width: 100%;
+                width: auto;
                 height: 100%;
                 border-radius: 44px;
                 box-shadow: 5px 3px 4px rgba(0, 0, 0, 0.40); 
@@ -347,9 +352,8 @@
                 background-color: #37264A;
                 height: 100%;
                 width: 100%;    
-                display: inline-flex;
+                display: flex;
                 flex-wrap: nowrap;
-                left: 0;
                 align-items: center; /* Centraliza verticalmente os itens */
                 justify-content: center; /* Centraliza horizontalmente os itens */
             }
@@ -368,13 +372,13 @@
             
             .logo img{
                 height: 100%;
+                margin: 5px;
+              
                
             }
             nav form{
                 height: 90%;
-                width: 20%;
-                display: flex;
-                align-items: center;
+              
                
         
             }
@@ -393,19 +397,16 @@
                 margin: 0;
             }
             .menu li{
-                
-                height: 90%;
-              
                
+                height: 100%;  
             }
-        
              .perfil{
                 width: auto;
-                height: 100%;
+                height: 94%;
              }
              .perfil img{
                 background-color: #D9D9D9;
-                height: 90%;
+                height: 87%;
                 width: auto;
                 border-radius: 50%;
              }

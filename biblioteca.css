@@ -42,7 +42,7 @@
     }
     #login{
        width: 100%;
-       height: 5%;
+       height: 7%;
        align-items: start;
        margin-bottom: 2%;
     
@@ -51,8 +51,7 @@
     #login label{
         background-color:#D9D9D9 ;
         width: 50%;
-        height: 7%;
-       
+        height: 5%;
         box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
         border-top-right-radius: 35px;
         border-bottom-right-radius: 35px;
@@ -244,7 +243,7 @@
     }
     main{
         width: 100%;
-        height: 75vh; 
+        height: 80vh; 
         background: #A69DB0; 
         border-top-right-radius: 130px;
         position: relative;
@@ -254,7 +253,7 @@
     }
     header{
         width: 100%;
-        height: 25vh;
+        height: 20vh;
         background-color: #03051A;
         display: flex;
         flex-direction: column;
@@ -262,19 +261,28 @@
 
     }
     #login{
-       margin-bottom: 1%;
-       background-color:#D9D9D9 ;
-       width: 15%;
-       height: 30px;
-       box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
-       border-radius: 35px;
-       color: rgba(0, 0, 0, 0.80); 
-       font-size:large;
-       text-align: center;
-      
-      
-    
+        width: 100%;
+        height: 5%;
+       justify-content: flex-start;
     }
+    
+    #login label {
+        background-color: #D9D9D9;
+        width: 25%;
+        height: 7%;
+        box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40);
+        border-top-right-radius: 35px;
+        border-bottom-right-radius: 35px;
+        border-bottom-left-radius: 35px;
+        color: rgba(0, 0, 0, 0.80);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: large;
+        position: absolute;
+    }
+    
+    
     button{
         background-color: transparent !important;
         border: none !important; 
@@ -291,7 +299,7 @@
     
     header img{
         width: auto;
-        margin-top: 1%;
+      
         height: 70%;
        
     }
@@ -301,8 +309,8 @@
        
     }
     .pesquisa-main{
-        width: 40%;
-        height: 10%;
+        width: 45%;
+        height: 8%;
         flex-direction: row; 
         justify-content: space-between; 
         align-items: center;
@@ -310,7 +318,7 @@
         
     }
     .input-pesquisa-main{
-       width: 50%;
+       width: 60%;
        height: 100%;
        background-color: transparent;
        border: none;
@@ -321,7 +329,7 @@
     }
     #div-pesquisa-main{
         border: none;
-        width: 50%; 
+        width: 60%; 
         height: 90%; 
         background-color: #D9D9D9;
         box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
@@ -364,18 +372,19 @@
     }
     .cont-jogos{
         width: 100%;
-        height: 100%;
+        height: 83%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
         justify-content: flex-start;
+        margin-top: 1%;
        
     }
    
     .cont-jogos div {
-        width: 10%;
-        height: auto;
+        width: auto;
+        height: 25%;
         overflow: hidden;
         margin: 1%;
         
@@ -412,7 +421,7 @@
         box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
         color: white;   
         background-color: #37264A;
-        height: 24%;
+        height: 28%;
         width: 100%;    
         display: inline-flex;
         flex-wrap: nowrap;
@@ -425,21 +434,18 @@
         display: flex;
         background-color: #37264A;
         align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        width: 9%;
+        justify-content: start;
+        width: 11%;
         border-radius: 10px;
     }
-    .logo p{
-        margin: 0px;
-        font-size: medium;
+    .logo h4{
+      margin: 0%;
     }
-   
     
     .logo img{
         height: 100%;
-        margin: 3px;
-     
+        margin: 5px;
+      
        
     }
     .menu {
@@ -453,7 +459,7 @@
         margin: 0px;
     }
     .iconeMenu {
-        height: 60%;
+        height: 50%;
         margin: 0;
     }
     .menu li{
@@ -492,7 +498,7 @@
      }
      .perfil{
         width: auto;
-        height: 100%;
+        height: 95%;
      }
      .perfil img{
         background-color: #D9D9D9;
@@ -500,7 +506,7 @@
         width: auto;
         border-radius: 50%;
      }
-}
 
 
+    }
 

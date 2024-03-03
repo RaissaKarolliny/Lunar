@@ -141,14 +141,17 @@
     
     .carousel-container {
         width: 100%;
-        overflow: hidden;
+        overflow: hidden; /* Oculta a barra de rolagem */
     }
     
     .cards-container {
         display: flex;
         overflow-x: auto;
+        overflow-y: hidden; /* Oculta a barra de rolagem vertical */
+        scrollbar-width: thin; /* para navegadores Firefox */
+        scrollbar-color: transparent transparent; /* para navegadores Firefox */
+        -ms-overflow-style: none; /* para navegadores Internet Explorer e Microsoft Edge antigos */
     }
-    
     #jogos-da-semana-card {
         background-color: #D9D9D9;
         border-radius: 15px;
@@ -369,9 +372,7 @@ header section p{
     height: 100%;
     margin: 0px;
     transform: scaleX(1);
-  
-  
-   
+
 
 }
 
