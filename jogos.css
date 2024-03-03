@@ -1,172 +1,423 @@
-*{
-    margin: 0 auto;
-    padding: 0 auto;
-    
-    }
-    body {
-        width: 100vw;
-        overflow: hidden;
-        background-color:#03051A !important;
-    }
-    header{
-       
-        height: 7vh;
-    }
- 
-    button{
-        background-color: transparent !important;
-        border: none !important; 
-
-    }
-    #section-mobile-home {
-        background-color: #03051A;
-        width: auto;
-        height: 100%;
-        display: inline-flex;
-        align-items: center;
-        padding-left: 2%;
+@media screen and (max-width:1080px){
+    *{
+        margin: 0 auto;
+        padding: 0 auto;
+        
+        }
+        body {
+            width: 100vw;
+            overflow: hidden;
+            background-color:#03051A !important;
+        }
+        header{
+           
+            height: 7vh;
+        }
+        nav{
+            display: none;
+        }
      
-    }
-
-    main{
-        width: 100%;
-        height: 93vh; 
-        background: #A69DB0; 
-        border-top-right-radius: 130px;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .btn-nav-mobile-img{
-        max-width: 83%;
-        margin-bottom: 20%;
-    }
-    .pesquisa{
-        width: 100%;
-        height: 13%;
-        flex-direction: row; /* Alterado para "row" para colocar os elementos na mesma linha */
-        justify-content: space-between; /* Distribui os elementos ao longo da linha */
-        align-items: center;
-        display:flex;
-    }
-    .input-pesquisa{
-       width: 70%;
-       height: 100%;
-       background-color: transparent;
-       border: none;
-       z-index: 0;
-
-    }
-    #div-pesquisa{
-        border: none;
-        margin-left: 1%;
-        width: 50%; 
-        height: 38px; 
-        background-color: #D9D9D9;
-        box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
-        border-radius: 50px;
-        display: flex;
+        button{
+            background-color: transparent !important;
+            border: none !important; 
+    
+        }
+        #section-mobile-home {
+            background-color: #03051A;
+            width: auto;
+            height: 100%;
+            display: inline-flex;
+            align-items: center;
+            padding-left: 2%;
+         
+        }
+    
+        main{
+            width: 100%;
+            height: 93vh; 
+            background: #A69DB0; 
+            border-top-right-radius: 130px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .btn-nav-mobile-img{
+            max-width: 83%;
+            margin-bottom: 20%;
+        }
+        .pesquisa{
+            width: 100%;
+            height: 13%;
+            flex-direction: row; /* Alterado para "row" para colocar os elementos na mesma linha */
+            justify-content: space-between; /* Distribui os elementos ao longo da linha */
+            align-items: center;
+            display:flex;
+        }
+        .input-pesquisa{
+           width: 70%;
+           height: 100%;
+           background-color: transparent;
+           border: none;
+           z-index: 0;
+    
+        }
+        #div-pesquisa{
+            border: none;
+            margin-left: 1%;
+            width: 50%; 
+            height: 38px; 
+            background-color: #D9D9D9;
+            box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
+            border-radius: 50px;
+            display: flex;
+            
+        }
+      
+        #img-scr{
+            width: 20%;
+            height: 100%;
+            align-items: center;
+            display: flex;
+            padding-top: 1%;
+        }
+        #img-src-img{
+    
+            width: 100%;
+            height: 100%;
+           
+        }
         
-    }
-  
-    #img-scr{
-        width: 20%;
-        height: 100%;
-        align-items: center;
-        display: flex;
-        padding-top: 1%;
-    }
-    #img-src-img{
-
-        width: 100%;
-        height: 100%;
        
-    }
+        .filtro{
+            display: flex;
+            margin-right: 20%;
+            background-color: #37264A;
+            box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40)!important;
+            border-radius: 50px!important;
+            position: relative;
     
-   
-    .filtro{
-        display: flex;
-        margin-right: 20%;
-        background-color: #37264A;
-        box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40)!important;
-        border-radius: 50px!important;
-        position: relative;
-
-    }
-    .cont-jogos{
-        width: 100%;
-        height: 87%;
-       
-    }
-    .cont-jogos div{
-        flex-direction: row; /* Alterado para "row" para colocar os elementos na mesma linha */
-        justify-content: space-between; /* Distribui os elementos ao longo da linha */
-        display: flex;
-        margin-bottom: 5%;
-        height: 16%;
-        width: auto;
-    }
-    .cont-jogos div div{
-        width: 27%;
-        height: 100%;
-        overflow: hidden;
+        }
+        .cont-jogos{
+            width: 100%;
+            height: 87%;
+           
+        }
+        .cont-jogos div{
+            flex-direction: row; /* Alterado para "row" para colocar os elementos na mesma linha */
+            justify-content: space-between; /* Distribui os elementos ao longo da linha */
+            display: flex;
+            margin-bottom: 5%;
+            height: 16%;
+            width: auto;
+        }
+        .cont-jogos div div{
+            width: auto;
+            height: 100%;
+            overflow: hidden;
+            
+        }
+        .cont-jogos div img{
+            width: 100%;
+            height: 100%;
+            border-radius: 44px;
+            box-shadow: 5px 3px 4px rgba(0, 0, 0, 0.40); 
+            object-fit: fill;
+        }
+        #cor-filtro{
+            background-color: #37264A !important;
+            
+        }
+        #cor-filtro a{
+            color: white !important;
+        }
+        #gatilhoMenu{
+            position: relative;
+            z-index: 1;
+        }
+            
+        .conteudoOffCanvas{
+            height: 100vh;
+            width: 40vw;
+            position: fixed;
+            left: -40vw;
+            background-color: #03051A;
+            transition: left 0.3s ease;
+            z-index: 0;
+        }
         
-    }
-    .cont-jogos div img{
-        width: 100%;
-        height: 100%;
-        border-radius: 44px;
-        box-shadow: 5px 3px 4px rgba(0, 0, 0, 0.40); 
-        object-fit: fill;
-    }
-    #cor-filtro{
-        background-color: #37264A !important;
+        .listaOffCanvas {
+            margin-top: 20%;
+            display: flex;
+            flex-direction: column; /* Dispor os itens verticalmente */
+            justify-content: space-evenly    ; /* Alinhar os itens ao centro horizontalmente */
+            align-items: center; /* Alinhar os itens ao centro verticalmente */
+        }
         
-    }
-    #cor-filtro a{
-        color: white !important;
-    }
-    #gatilhoMenu{
-        position: relative;
-        z-index: 1;
-    }
+        .iconeMenu{
+            margin-top: 60%;
+            margin-bottom: 6%;
+            max-width: 50%;
+            margin-bottom: 10%;
+         
+        }
         
-    .conteudoOffCanvas{
-        height: 100vh;
-        width: 40vw;
-        position: fixed;
-        left: -40vw;
-        background-color: #03051A;
-        transition: left 0.3s ease;
-        z-index: 0;
-    }
+        .ativarOffCanvas{
+            transform: none !important;
+            left: 0;
+        }
+        
+        input::placeholder{
+            font-size:small
+        }
+}
+    @media screen and (min-width:1081px){
     
-    .listaOffCanvas {
-        margin-top: 20%;
-        display: flex;
-        flex-direction: column; /* Dispor os itens verticalmente */
-        justify-content: space-evenly    ; /* Alinhar os itens ao centro horizontalmente */
-        align-items: center; /* Alinhar os itens ao centro verticalmente */
+        *{
+            margin: 0 auto;
+            padding: 0 auto;
+            
+            }
+            body {
+                width: 100vw;
+                overflow: hidden;
+                background-color:#03051A !important;
+            }
+            header{
+                width: 100%;
+                height: 7vh;
+                background-color: #03051A;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+        
+               
+        
+            }
+         
+            button{
+                background-color: transparent !important;
+                border: none !important; 
+        
+            }
+            #section-mobile-home {
+              display: none;
+             
+            }
+        
+            main{
+                width: 100%;
+                height: 93vh; 
+                background: #A69DB0; 
+                border-radius: none;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            .btn-nav-mobile-img{
+                max-width: 83%;
+                margin-bottom: 20%;
+            }
+            #div-pesquisa input::placeholder{
+                font-size: larger;
+            }
+            .pesquisa{
+                width: 40%;
+                height: 15%;
+                flex-direction: row; /* Alterado para "row" para colocar os elementos na mesma linha */
+                align-items: center;
+                display:flex;
+                justify-content: center;
+            }
+            .input-pesquisa{
+               width: 70%;
+               height: 100%;
+               background-color: transparent;
+               border: none;
+               z-index: 0;
+               text-align: center;
+              
+        
+            }
+            #div-pesquisa{
+                border: none;
+                margin-left: 1%;
+                width: 40%; 
+                height: 40%; 
+                background-color: #D9D9D9;
+                box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
+                border-radius: 50px;
+                display: flex;
+                
+            }
+            
+          
+            #img-scr{
+                width: 20%;
+                height: 90%;
+                align-items: center;
+                display: flex;
+                padding-top: 1%;
+            }
+            #img-src-img{
+        
+                width: 100%;
+                height: 100%;
+               
+            }
+            
+           
+            .filtro{
+                display: flex;
+                background-color: #37264A;
+                box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40)!important;
+                border-radius: 50px!important;
+                position: relative;
+        
+            }
+            .cont-jogos{
+                width: 100%;
+                height: 87%;
+               
+            }
+            .cont-jogos div{
+                flex-direction: row; /* Alterado para "row" para colocar os elementos na mesma linha */
+                display: flex;
+                height: 18%;
+                
+               margin: 0px;
+              justify-content: space-evenly;
+              margin-bottom: 1%;
+            }
+            .cont-jogos div div{
+                width: auto;
+                height: 100%;
+                overflow: hidden;
+              
+                
+            }
+            .cont-jogos div img{
+                width: auto;
+                height: 100%;
+                border-radius: 44px;
+                box-shadow: 5px 3px 4px rgba(0, 0, 0, 0.40); 
+                object-fit: fill;
+            }
+            #cor-filtro{
+                background-color: #37264A !important;
+                
+            }
+            #cor-filtro a{
+                color: white !important;
+            }
+            #gatilhoMenu{
+                position: relative;
+                z-index: 1;
+            }
+                
+            .conteudoOffCanvas{
+                display: none;
+            }
+            
+            .listaOffCanvas {
+                margin-top: 20%;
+                display: flex;
+                flex-direction: column; /* Dispor os itens verticalmente */
+                justify-content: space-evenly    ; /* Alinhar os itens ao centro horizontalmente */
+                align-items: center; /* Alinhar os itens ao centro verticalmente */
+            }
+            
+            .iconeMenu{
+                margin-top: 60%;
+                margin-bottom: 6%;
+                max-width: 50%;
+                margin-bottom: 10%;
+             
+            }
+            
+            .ativarOffCanvas{
+                transform: none !important;
+                left: 0;
+            }
+            
+            input::placeholder{
+                font-size:small
+            }
+            nav{
+                box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
+                color: white;   
+                background-color: #37264A;
+                height: 100%;
+                width: 100%;    
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center; /* Centraliza verticalmente os itens */
+                justify-content: center; /* Centraliza horizontalmente os itens */
+            }
+            .logo{
+                height: 100%;
+                display: flex;
+                background-color: #37264A;
+                align-items: center;
+                justify-content: start;
+                width: 11%;
+                border-radius: 10px;
+            }
+            .logo h4{
+              margin: 0%;
+            }
+            
+            .logo img{
+                height: 100%;
+                margin: 5px;
+              
+               
+            }
+            nav form{
+                height: 90%;
+              
+               
+        
+            }
+            .menu {
+                background-color: #03051A;
+                height: 100%;
+                display: flex;
+                align-items: center; 
+                justify-content: center;
+                width: 70%;
+                border-radius: 50px 0 50px 0;
+                margin: 0px;
+            }
+            .iconeMenu {
+                height: 90%;
+                margin: 0;
+            }
+            .menu li{
+               
+                height: 100%;  
+            }
+             .perfil{
+                width: auto;
+                height: 94%;
+             }
+             .perfil img{
+                background-color: #D9D9D9;
+                height: 87%;
+                width: auto;
+                border-radius: 50%;
+             }
     }
+        
     
-    .iconeMenu{
-        margin-top: 60%;
-        margin-bottom: 6%;
-        max-width: 50%;
-        margin-bottom: 10%;
+      
+    
      
-    }
     
-    .ativarOffCanvas{
-        transform: none !important;
-        left: 0;
-    }
-    
-    input::placeholder{
-        font-size:small
-    }
+     
 
   
 

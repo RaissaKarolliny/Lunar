@@ -1,4 +1,4 @@
-@media screen and (max-width:415px){
+@media screen and (max-width:1261px){
     #bodyDasktop{
         display: none;
     }
@@ -141,14 +141,17 @@
     
     .carousel-container {
         width: 100%;
-        overflow: hidden;
+        overflow: hidden; /* Oculta a barra de rolagem */
     }
     
     .cards-container {
         display: flex;
         overflow-x: auto;
+        overflow-y: hidden; /* Oculta a barra de rolagem vertical */
+        scrollbar-width: thin; /* para navegadores Firefox */
+        scrollbar-color: transparent transparent; /* para navegadores Firefox */
+        -ms-overflow-style: none; /* para navegadores Internet Explorer e Microsoft Edge antigos */
     }
-    
     #jogos-da-semana-card {
         background-color: #D9D9D9;
         border-radius: 15px;
@@ -259,7 +262,7 @@
     
 }
 
-@media screen and (min-width:416px){
+@media screen and (min-width:1262px){
 #bodyMobile{
    display: none ;
 }
@@ -369,9 +372,7 @@ header section p{
     height: 100%;
     margin: 0px;
     transform: scaleX(1);
-  
-  
-   
+
 
 }
 
@@ -444,4 +445,139 @@ header section p{
     width: 40px;
     border-radius: 50%;
  }
+ .conteudoOffCanvas {
+        height: 100vh;
+        width: 80vw;
+        position: fixed;
+        margin: 0;
+        transition: translateX(-100%);
+    }
+    
+    .carousel-container {
+        width: 100%;
+        overflow: hidden; /* Oculta a barra de rolagem */
+    }
+    
+    .cards-container {
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden; /* Oculta a barra de rolagem vertical */
+        scrollbar-width: thin; /* para navegadores Firefox */
+        scrollbar-color: transparent transparent; /* para navegadores Firefox */
+        -ms-overflow-style: none; /* para navegadores Internet Explorer e Microsoft Edge antigos */
+    }
+    
+    .cards-container::-webkit-scrollbar {
+        display: none; /* para navegadores baseados em Chromium, como o Google Chrome e o Microsoft Edge */
+    }
+    
+    
+    #jogos-da-semana-card {
+        background-color: #D9D9D9;
+        border-radius: 15px;
+        box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40);
+        padding: 10px;
+        margin: 2% 10px 10px 10px;
+        width: 200px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    #jogos-da-semana-card h4 {
+        margin: 5% 5px 5px 5px;
+        font-size: 20px;
+    }
+    
+    .card {
+        width: 200px;
+        border: 0px;
+        border-radius: 20px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: transform 0.5s;
+    }
+    
+    .card img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .card:hover {
+        transform: scale
+    }
+    
+    .jogo-container {
+        margin: 0px 10px 0px 0px;
+        position: relative;
+    }
+    
+    #jogo-container-1 {
+        margin-left: 10px;
+    }
+    
+    .btn-carrossel-mobile {
+        background-color: #37264A;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        height: 25%;
+        width: 25%;
+        margin: 0;
+        padding: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px 0px 20px 0px;
+        padding: auto;
+    }
+    
+    .btn-carrossel-mobile-img {
+        height: 80%;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    ul,
+    ol {
+        list-style-type: none;
+    }
+    
+    #gatilhoMenu {
+        position: relative;
+        z-index: 1;
+    }
+    
+    .conteudoOffCanvas {
+        height: 100vh;
+        width: 40vw;
+        position: fixed;
+        left: -40vw;
+        background-color: #03051A;
+        transition: left 0.3s ease;
+        z-index: 3;
+    }
+    
+    .listaOffCanvas {
+        margin-top: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .iconeMenu {
+        margin-top: 60%;
+        margin-bottom: 6%;
+        max-width: 50%;
+        margin-bottom: 10%;
+    }
+    
+    .ativarOffCanvas {
+        transform: none !important;
+        left: 0;
+    }
 }

@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+    <script src="tela-jogo.js"></script>
     <title>Lunar</title>
 </head>
 
@@ -69,18 +70,13 @@
                     </button>
                 </div>
             </div>
-
-            <span id="btn-download-mobile">
-                <button>
-                    <img id="btn-download-img" src="icones/download.svg"  alt="">
-                </button>
-            </span>
         </section>
+
 
         <section id="section-comentarios">
             <div id="div-btn-titulo-comentarios">
                 <span id="btn-comentar">
-                    <button>
+                    <button onclick="comentar()">
                         <img id="img-btn-comentarios" src="icones/plus.svg" alt="">
                     </button>
                 </span>
@@ -91,7 +87,31 @@
                 </div>
             </div>
 
-            <div id="div-dos-comentarios">
+            <div id="div-dos-comentarios row">
+                <div class="comentario comenta" id="targgetComenta">
+                    <form action="" style="width: 100%;">
+
+                    
+                    <div class="div-do-header-do-comentario">
+                        <div class="div-foto-perfil-do-comentario">
+                            <img class="foto-perfil-do-comentario" src="icones/icone perfil.svg" alt="foto perfil">
+                        </div>
+                        <div class="div-perfil-e-avaliacao-do-comentario">
+                            <div class="div-nome-do-usuario-do-comentario">
+                                <h5 class="nome-do-usuario-do-comentario"><b>nomeUsuario</b></h5>
+                            </div>
+                            <div class="div-avaliacao-do-comentario">
+                                <img class="avaliacao-do-comentario" src="icones/estrelas-avaliacao.svg" alt="">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="div-do-paragrafo-do-comentario">
+                        <p class="paragrafo-do-comentario"> <textarea placeholder="COMENTÁRIO..."  style="width: 100%;"></textarea></p>
+                    </div>
+                    <input  type="submit">
+                </form>
+                </div>
                 <div class="comentario">
                     <div class="div-do-header-do-comentario">
                         <div class="div-foto-perfil-do-comentario">
@@ -116,7 +136,7 @@
                         </div>
                     </div>
                     <div class="div-do-paragrafo-do-comentario">
-                        <p class="paragrafo-do-comentario">QUE JOGO LIXO, PREFIRO COMER LIXO TÔXICO DO QUE TER QUE JOGAR ISSO DE NOVO, ESSE PDAÇO DE BOSTA ACABOU COM MINHA FAMÍLIA, E COLOCOU FOGO NO MEU CACHORRO, 10/10</p>
+                        <p class="paragrafo-do-comentario"> E  BOSTA ACABOU COM MINHA FAMÍLIA, E COLOCOU FOGO NO MEU CACHORRO, 10/10</p>
                     </div>
                 </div>
 

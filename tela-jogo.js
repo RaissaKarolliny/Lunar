@@ -11,3 +11,8 @@ document.addEventListener('DOMContentLoaded', function(){
 
     meuParagrafo.style.maxHeight = alturaParagrafo + 'px';
 });
+
+function comentar(){
+    const conteudo = document.getElementById('targgetComenta');
+    conteudo.classList.toggle('comenta');
+}
