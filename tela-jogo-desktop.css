@@ -39,26 +39,50 @@ main {
 
 #div-da-img-texto-e-avaliacao-do-jogo {
     display: flex;
-    flex: row;
+    flex-direction: row;
+    justify-content: space-between;
+    height: fit-content;
+    width: 100%;
 }
 
 #div-da-img-do-jogo {
-    margin: 0px 60px 0px 0px;
+    overflow: hidden;
+    flex: 40%;
+    height: fit-content;
+    display: flex;
+    border-radius: 50px;
+    margin: 0px auto 0px 0px;
 }
 
-#img-do-jogo{
-    height: 45vh;
+#img-do-jogo {
+    height: auto;
+    width: 100%;
 }
 
 #div-do-texto-e-da-avaliacao-do-jogo {
-    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
+    flex: 60%;
+    justify-content: space-between;
+    margin: 0px 0px 0px auto;
+}
+
+#div-do-texto-e-da-avaliacao-do-jogo-2{
+    height: 100%;
+    width: 90%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#div-titulo-e-paragrafo-do-jogo{
+
 }
 
 #div-do-titulo-do-jogo {
-    margin: 0px auto 0px 0px
+    margin: 0px auto 10px 0px
 }
 
 #titulo-do-jogo {
@@ -67,7 +91,7 @@ main {
 }
 
 #div-do-paragrafo-do-jogo {
-    margin: 10px 0px 10px 0px;
+    overflow: auto;
 }
 
 #paragrafo-do-jogo {
@@ -76,11 +100,10 @@ main {
 }
 
 #div-avaliacao-e-botao-download {
-    position: absolute;
-    bottom: 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 15%;
     width: 100%;
 }
 
@@ -94,76 +117,75 @@ main {
 }
 
 #div-botao-download {
+    border-radius: 30px;
+    background-color: #d9d9d9;
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0px 0px 0px auto;
+    height: 100%;
 }
 
 #img-botao-download {
-    height: 10vh;
+    margin: 0px 25px 0px 25px;
+    height: 60%;
 }
 
 
 
 
 
-#div-do-carrossel {
+.carrossel-container {
+    margin: 50px 0px 50px 0px;
     position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    margin: 50px 0px 50px 0px;
+    width: 100%;
+    overflow: hidden;
+}
+  
+.span-btn-carrossel{
+    display: flex;
     height: fit-content;
     width: fit-content;
 }
 
 .carrossel {
-    overflow: hidden;
-    width: 47vw;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     transition: transform 0.5s ease-in-out;
+    width: 47vw;
+    overflow: hidden;
 }
-
+  
 .slide {
+    width: 100%;
     display: flex;
 }
-
-.slide div{
-    display: inline-block;
+  
+.div-imagem-carrossel{
+    height: fit-content;
+    width: fit-content;
     overflow: hidden;
     border-radius: 30px;
+    display: flex;
     margin: 0px 1vw 0px 0px;
 }
 
-.slide div img {
+.img-carrossel {
     width: 15vw;
     height: auto;
 }
-
-.div-botao-carrossel {
-    display: flex;
-    height: fit-content;
-    width: fit-content;
+  
+.btn-carrossel {
+    background-color: transparent !important;
+    border: none !important;
 }
-
-#btn-carrossel-prev,
-#btn-carrossel-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 24px;
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-    outline: none;
-}
-
+  
 .btn-prev {
     left: 10px;
 }
-
+  
 .btn-next {
     right: 10px;
 }
