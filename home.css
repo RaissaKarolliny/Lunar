@@ -286,18 +286,7 @@ header{
     height: 50vh;
     width: 100vw;
 }
-nav{
-    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
-    color: white;   
-    background-color: #37264A;
-    height: 15%;
-    width: 100%;    
-    display: inline-flex;
-    flex-wrap: nowrap;
-    left: 0;
-    align-items: center; /* Centraliza verticalmente os itens */
-    justify-content: center; /* Centraliza horizontalmente os itens */
-}
+
 
 header section{
     height: 85%;
@@ -375,8 +364,18 @@ header section p{
 
 
 }
-
-
+nav{
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
+    color: white;   
+    background-color: #37264A;
+    height: 15%;
+    width: 100%;    
+    display: inline-flex;
+    flex-wrap: nowrap;
+    left: 0;
+    align-items: center; /* Centraliza verticalmente os itens */
+    justify-content: center; /* Centraliza horizontalmente os itens */
+}
 .logo{
     height: 100%;
     display: flex;
@@ -386,27 +385,35 @@ header section p{
     width: 10%;
     border-radius: 10px;
 }
+.logo h4{
+  margin: 0%;
+}
+
 .logo img{
-    margin: 2%;
     height: 100%;
+    margin: 5px;
+   
 }
 .menu {
     background-color: #03051A;
     height: 100%;
     display: flex;
     align-items: center; 
+    justify-content: center;
     width: 70%;
     border-radius: 50px 0 50px 0;
+    margin: 0px;
+}
+.menu li{
+ 
+    height: 40%;
+  
+   
 }
 .iconeMenu {
-    height: 25px;
-    margin: 0;
-}
-.criador{
     height: 100%;
-
+    margin: 0px;
 }
-
 .input-pesquisa{
     width: 70%;
     height: 100%;
@@ -418,7 +425,7 @@ header section p{
  #div-pesquisa{
      border: none;
      margin-left: 1%;
-     height: 38px; 
+     height: 30px; 
      background-color: #D9D9D9;
      box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
      border-radius: 50px;
@@ -437,14 +444,24 @@ header section p{
      height: 100%;
  }
  .perfil{
-    width: 5%;
+    width: auto;
+    height: 90%;
  }
  .perfil img{
     background-color: #D9D9D9;
-    height: 40px;
-    width: 40px;
+    height: 100%;
+    width: auto;
     border-radius: 50%;
  }
+
+
+
+.criador{
+    height: 100%;
+
+}
+
+
  .conteudoOffCanvas {
         height: 100vh;
         width: 80vw;
@@ -567,13 +584,6 @@ header section p{
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-    }
-    
-    .iconeMenu {
-        margin-top: 60%;
-        margin-bottom: 6%;
-        max-width: 50%;
-        margin-bottom: 10%;
     }
     
     .ativarOffCanvas {
