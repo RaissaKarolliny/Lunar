@@ -400,6 +400,7 @@
     body {
         width: 100%;
         overflow-y: auto ;
+        overflow-x: hidden;
         background-color: #03051A !important;
     }
     main{

@@ -539,7 +539,41 @@
         margin: 2%;
         height: 100%;
     }
-
+    .campo-pesquisa {
+        display: none;
+        background-color: rgba(0, 0, 0, 0.5); 
+        position: fixed;
+        top: 0.5%;
+        left: 22%;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+    }
+    .input-pesquisa {
+        width: calc(100% - 0px); 
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        z-index: 0;
+    }
+    .campo-pesquisa.ativo {
+        display: flex;
+        background-color: transparent;
+    }
+    
+    #inputPesquisa {
+        margin-right: 10px;
+    }
+    .fade-preto {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3); 
+        z-index: 4; 
+        display: none; 
+    }
     .menu {
         background-color: #03051A;
         height: 100%;
