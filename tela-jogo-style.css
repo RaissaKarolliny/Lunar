@@ -100,12 +100,10 @@ input[type="submit"] {
 }
 
 #descricao-jogo-titulo{
-
     color: #d9d9d9;
 }
 
 #descricao-jogo-div-paragrafo{
-
     overflow: auto;
 }
 
@@ -164,6 +162,9 @@ input[type="submit"] {
 #btn-download-img{
     height: 3vh;
 }
+
+
+
 
 #section-comentarios{
     border-radius: 40px 40px 0px 0px;
