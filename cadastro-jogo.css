@@ -25,35 +25,7 @@ header{
     height: 8vh;
     width: 100vw;
 }
-.input-pesquisa{
-    width: 70%;
-    height: 100%;
-    background-color: transparent;
-    border: none;
-    z-index: 0;
 
- }
- #div-pesquisa{
-     border: none;
-     margin-left: 1%;
-     height: 38px; 
-     background-color: #D9D9D9;
-     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
-     border-radius: 50px;
-     display: flex;
- }
-
- #img-scr{
-     width: 20%;
-     height: 100%;
-     align-items: center;
-     display: flex;
-     padding-top: 1%;
- }
- #img-src-img{
-     width: 100%;
-     height: 100%;
- }
 nav{
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
     color: white;   
@@ -213,8 +185,8 @@ nav{
     display: inline-flex;
     flex-wrap: nowrap;
     left: 0;
-    align-items: center; /* Centraliza verticalmente os itens */
-    justify-content: center; /* Centraliza horizontalmente os itens */
+    align-items: center;
+    justify-content: center; 
 }
 .logo{
     height: 100%;
