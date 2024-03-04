@@ -1,5 +1,199 @@
+@media screen and (max-width:768px) {
+    *{
+        margin: 0 auto;
+        padding: 0 auto;
+        }
+    body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: #03051A !important;
+    }
+    nav{
+        display: none;
+    }
+    main{
+        width: 100%;
+        height: 80vh; 
+        background: #A69DB0; 
+        border-top-right-radius: 130px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+    header{
+        width: 100%;
+        height: 20vh; 
+        background-color: #03051A; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+    #login{
+       width: 100%;
+       height: 7%;
+       align-items: start;
+       margin-bottom: 2%;
+    }
+    #login label{
+        background-color:#D9D9D9 ;
+        width: 50%;
+        height: 5%;
+        box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
+        border-top-right-radius: 35px;
+        border-bottom-right-radius: 35px;
+        border-bottom-left-radius: 35px;
+        color: rgba(0, 0, 0, 0.80); 
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+        font-size:large; 
+        position: absolute;
+    }
+    button{
+        background-color: transparent !important;
+        border: none !important; 
+    }
+    #section-mobile-home {
+        background-color: #03051A;
+        width: 100%;
+        height: 100%;
+        display: flex;
+       align-items: center;
+    }
+    #section-mobile-home button{
+        height: 100%;
+        width: auto;
+    }
+    header img{
+        width: auto;
+        height: 65%;
+        margin-bottom: 3%;
+    }
+    .btn-nav-mobile-img{
+        max-width: 80%;
+        height: 70%;
+        margin-left: 5%;
+    }
+    .pesquisa-main{
+        width: 100%;
+        height: 13%;
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center;
+        display:flex;
+    }
+    .input-pesquisa-main{
+       width: 70%;
+       height: 100%;
+       background-color: transparent;
+       border: none;
+       z-index: 0;
+    }
+    #div-pesquisa-main{
+        border: none;
+        margin-left: 8%;
+        width: 70%; 
+        height: 40px; 
+        background-color: #D9D9D9;
+        box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
+        border-radius: 50px;
+        display: flex;
+    }
+    #img-scr-main{
+        width: 20%;
+        height: 100%;
+        align-items: center;
+        display: flex;
+        padding-top: 1%;
+        padding-left: 3%;
+    }
+    #img-src-img-main{
+        width: auto;
+        height: 90%;
+    }
+    .filtro{
+        display: flex;
+        margin-right: 18%;
+        background-color: #37264A;
+        box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40)!important;
+        border-radius: 50px!important;
+        position: relative;
+        margin-left: 2%;
+    }
 
-@media screen and (max-width:912px) {
+    .cont-jogos{
+        width: 80%;
+        justify-content: flex-start;
+        display: flex;
+        height: 80%;
+        overflow: scroll;
+        flex-wrap: wrap;
+    }
+    .cont-jogos div {
+        width: auto;
+        height: 20%;
+        margin-bottom: 2%;
+    }
+    .cont-jogos div img{
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+        box-shadow: 5px 3px 4px rgba(0, 0, 0, 0.40); 
+        object-fit: fill;
+    }
+    #cor-filtro{
+        background-color: #37264A !important;
+    }
+    #cor-filtro a{
+        color: white !important;
+    }
+    #gatilhoMenu{
+        position: relative;
+        z-index: 1;
+    }
+    .conteudoOffCanvas{
+        height: 100vh;
+        width: 40vw;
+        position: fixed;
+        left: -40vw;
+        background-color: #03051A;
+        transition: left 0.3s ease;
+        z-index: 0;
+    }
+    .listaOffCanvas {
+        margin-top: 20%;
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-around; 
+        padding-top:40%;
+    }
+    .listaOffCanvas li{
+        margin-bottom: 40%;
+    }
+    .listaOffCanvas a{
+        display: flex;
+        justify-content: space-evenly; 
+        align-items: center;
+    }
+    .iconeMenu{
+        max-width: 90%;
+    }
+    .ativarOffCanvas{
+        transform: none !important;
+        left: 0;
+    }
+    input::placeholder{
+        font-size:medium;
+        text-align: center;
+    }
+}
+@media screen and (max-width:768px) {
     *{
         margin: 0 auto;
         padding: 0 auto;
@@ -155,21 +349,23 @@
         
     
     }
+    main .cont-jogos{
+        width: 80%;
+    }
     .cont-jogos{
-        width: 90%;
+       
       
         justify-content: flex-start;
         display: flex;
-        height: 100%;
-        width: auto;
+        height: 80%;
+        overflow: scroll;
         flex-wrap: wrap;
 
        
     }
     .cont-jogos div {
-        width: 30%;
+        width: auto;
         height: 20%;
-        overflow: hidden;
         margin-bottom: 2%;
     }
 
@@ -188,41 +384,6 @@
     #cor-filtro a{
         color: white !important;
     }
-    #gatilhoMenu{
-        position: relative;
-        z-index: 1;
-    }
-        
-    .conteudoOffCanvas{
-        height: 100vh;
-        width: 40vw;
-        position: fixed;
-        left: -40vw;
-        background-color: #03051A;
-        transition: left 0.3s ease;
-        z-index: 0;
-    }
-    
-    .listaOffCanvas {
-        margin-top: 20%;
-        display: flex;
-        flex-direction: column; /* Dispor os itens verticalmente */
-        justify-content: space-evenly    ; /* Alinhar os itens ao centro horizontalmente */
-        align-items: center; /* Alinhar os itens ao centro verticalmente */
-    }
-    
-    .iconeMenu{
-        margin-top: 60%;
-        margin-bottom: 6%;
-        max-width: 50%;
-        margin-bottom: 10%;
-     
-    }
-    
-    .ativarOffCanvas{
-        transform: none !important;
-        left: 0;
-    }
     
     input::placeholder{
         font-size:medium;
@@ -230,7 +391,7 @@
     }
 }
 
-@media screen and (min-width:913px) {
+@media screen and (min-width:769px) {
     *{
         margin: 0 auto;
         padding: 0 auto;
@@ -238,7 +399,7 @@
         }
     body {
         width: 100%;
-        overflow: hidden;
+        overflow-y: auto ;
         background-color: #03051A !important;
     }
     main{
@@ -249,7 +410,7 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        align-items: flex-start; /* Alinhamento no canto superior esquerdo */
+        align-items: center;
     }
     header{
         width: 100%;
@@ -268,8 +429,8 @@
     
     #login label {
         background-color: #D9D9D9;
-        width: 25%;
-        height: 7%;
+        width: 20%;
+        height: 6%;
         box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40);
         border-top-right-radius: 35px;
         border-bottom-right-radius: 35px;
@@ -374,18 +535,21 @@
         width: 100%;
         height: 83%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
         justify-content: flex-start;
         margin-top: 1%;
+        overflow: auto;
+        margin-left: 2.5%;
+      
        
     }
    
     .cont-jogos div {
         width: auto;
         height: 25%;
-        overflow: hidden;
+      
         margin: 1%;
         
     }
@@ -438,6 +602,8 @@
         width: 11%;
         border-radius: 10px;
     }
+    
+
     .logo h4{
       margin: 0%;
     }
@@ -465,13 +631,9 @@
     .menu li{
         margin-top:2%;
         height: 90%;
-      
-       
     }
     nav form{
         height: 90%;
-       
-
     }
     .input-pesquisa{
         width: 90%;
@@ -479,7 +641,6 @@
         background-color: transparent;
         border: none;
         z-index: 0;
-    
      }
      #div-pesquisa{
        display: none;
@@ -510,3 +671,16 @@
 
     }
 
+    img{
+        pointer-events: none;
+    }
+    html {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        height: 100%;
+        width: 100%;
+    }
+    ul,
+    ol {
+        list-style-type: none;
+    }
+    

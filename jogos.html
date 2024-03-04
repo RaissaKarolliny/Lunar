@@ -17,20 +17,24 @@
             </span>
         </section>
         <nav>
-            <div class="logo">
-                <img src="fotos/lunarfoguete.png" alt="">
-                <h4>LUNAR</h4>
-
+            <div class="logo" id="redireciona"> 
+                <script>
+                    document.getElementById("redireciona").addEventListener("click", function() {
+                        window.location.href = "home.html";
+                    });
+                </script>
+                    <img src="fotos/lunarfoguete.png" alt="">
+                    <h4>LUNAR</h4>
             </div>
             <ul type="none" class="menu">
                 <li>
-                    <a href=""><img class="iconeMenu" src="icones/geral.svg" alt=""></a>
+                    <a href="biblioteca.html"><img class="iconeMenu" src="icones/jogos.svg" alt=""></a>
                 </li>
                 <li>
-                    <a href=""><img class="iconeMenu" src="icones/criador.svg" alt=""></a>
+                    <a href="criador.html"><img class="iconeMenu" src="icones/criador.svg" alt=""></a>
                 </li>
                 <li>
-                    <a href=""><img class="iconeMenu" src="icones/sobre.svg" alt=""></a>
+                    <a href="sobre.html"><img class="iconeMenu" src="icones/sobre.svg" alt=""></a>
                 </li>
             </ul>
             <div class="perfil">
@@ -68,16 +72,13 @@
             <div id="menuOffCanvas" class="conteudoOffCanvas">
                 <ul class="listaOffCanvas">
                     <li>
-                        <a href=""><img class="iconeMenu" src="icones/home.svg" alt=""></a>
+                        <a href="home.html"><img class="iconeMenu" src="icones/home.svg" alt=""></a>
                     </li>
                     <li>
-                        <a href=""><img class="iconeMenu" src="icones/geral.svg" alt=""></a>
+                        <a href="biblioteca.html"><img class="iconeMenu" src="icones/jogos.svg" alt=""></a>
                     </li>
                     <li>
-                        <a href=""><img class="iconeMenu" src="icones/sobre.svg" alt=""></a>
-                    </li>
-                    <li>
-                        <a href=""><img class="iconeMenu" src="icones/perfil.svg" alt=""></a>
+                        <a href="sobre.html"><img class="iconeMenu" src="icones/sobre.svg" alt=""></a>
                     </li>
                 </ul>
             </div>

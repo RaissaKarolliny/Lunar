@@ -335,3 +335,54 @@ input[type="submit"] {
 
     text-align: justify;
 }
+img{
+    pointer-events: none;
+}
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+}
+#gatilhoMenu{
+    position: relative;
+    z-index: 11;
+}
+    
+.conteudoOffCanvas{
+    height: 100vh;
+    width: 40vw;
+    position: fixed;
+    left: -40vw;
+    background-color: #03051A;
+    transition: left 0.3s ease;
+    z-index: 10;
+}
+
+.listaOffCanvas {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around; 
+    padding-top:40%;
+}
+
+.listaOffCanvas li{
+    margin-bottom: 40%;
+}
+.listaOffCanvas a{
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+}
+.iconeMenu{
+    max-width: 90%;
+}
+
+.ativarOffCanvas{
+    transform: none !important;
+    left: 0;
+}
+ul,
+ol {
+    list-style-type: none;
+}

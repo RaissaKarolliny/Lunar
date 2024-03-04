@@ -285,3 +285,15 @@ nav{
     width: auto;
     border-radius: 50%;
  }
+ img{
+    pointer-events: none;
+}
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+}
+ul,
+ol {
+    list-style-type: none;
+}
