@@ -279,7 +279,9 @@
 }
 
 @media screen and (min-width:769px){
-
+    #bodyMobile{
+        display: none;
+    }
 *{
     margin: 0 auto;
     padding: 0 auto;
