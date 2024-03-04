@@ -22,7 +22,7 @@ main {
 }
 
 header{
-    height: 6vh;
+    height: 7vh;
     width: 100vw;
 }
 
@@ -92,14 +92,14 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: smaller;
+    font-size: large;
    
 }
 
 
 #upLoadPhoto {
     margin-top: 5%;
-    height: 60%;
+    height: 50%;
     width: 30%;
     border: none;
     border-radius: 15px;
@@ -132,7 +132,7 @@ nav{
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
     color: white;   
     background-color: #37264A;
-    height: 96%;
+    height: 97%;
     width: 100%;    
     display: inline-flex;
     flex-wrap: nowrap;
@@ -146,11 +146,12 @@ nav{
     background-color: #37264A;
     align-items: center;
     justify-content: start;
-    width: 11%;
+    width: 10%;
     border-radius: 10px;
 }
 .logo h4{
   margin: 0%;
+  font-size: large;
 }
 
 .logo img{
@@ -168,7 +169,7 @@ nav{
     margin: 0px;
 }
 .iconeMenu {
-    height: 30px;
+    height: 33px;
     margin: 0;
 }
 .input-pesquisa{
