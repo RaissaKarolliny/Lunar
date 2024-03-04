@@ -131,14 +131,6 @@
         padding: auto;
     }
     
-    .conteudoOffCanvas {
-        height: 100vh;
-        width: 80vw;
-        position: fixed;
-        margin: 0;
-        transition: translateX(-100%);
-    }
-    
     .carousel-container {
         width: 100%;
         overflow: hidden; /* Oculta a barra de rolagem */
@@ -180,7 +172,8 @@
     }
     
     .card img {
-        width: 100%;
+
+        object-fit: cover;
         border-radius: 10px;
     }
     
@@ -506,23 +499,10 @@ nav form{
     width: auto;
     border-radius: 50%;
  }
-
-
-
 .criador{
     height: 100%;
 
 }
-
-
- .conteudoOffCanvas {
-        height: 100vh;
-        width: 80vw;
-        position: fixed;
-        margin: 0;
-        transition: translateX(-100%);
-    }
-    
     .carousel-container {
         width: 100%;
         overflow: hidden; /* Oculta a barra de rolagem */
@@ -572,7 +552,7 @@ nav form{
     }
     
     .card img {
-        width: 100%;
+        object-fit: cover;
         border-radius: 10px;
         z-index: 10;
     }
@@ -610,7 +590,7 @@ nav form{
     }
     
     .btn-carrossel-mobile-img {
-        height: 80%;
+        height: 100%;
         width: 80%;
         align-items: center;
         justify-content: center;
@@ -635,7 +615,7 @@ nav form{
         left: 50% !important;
     }
 
-
+    
 
 }
 img{
