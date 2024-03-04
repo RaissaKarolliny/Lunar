@@ -12,7 +12,7 @@ body {
 
 main {
     width: 100%;
-    height: 85vh;
+    height: 86vh;
     background: #A69DB0;
     position: relative;
     display: flex;
@@ -22,49 +22,8 @@ main {
 }
 
 header{
-    height: 8vh;
+    height: 7vh;
     width: 100vw;
-}
-.input-pesquisa{
-    width: 70%;
-    height: 100%;
-    background-color: transparent;
-    border: none;
-    z-index: 0;
-
- }
- #div-pesquisa{
-     border: none;
-     margin-left: 1%;
-     height: 38px; 
-     background-color: #D9D9D9;
-     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
-     border-radius: 50px;
-     display: flex;
- }
-
- #img-scr{
-     width: 20%;
-     height: 100%;
-     align-items: center;
-     display: flex;
-     padding-top: 1%;
- }
- #img-src-img{
-     width: 100%;
-     height: 100%;
- }
-nav{
-    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
-    color: white;   
-    background-color: #37264A;
-    height: 100%;
-    width: 100%;    
-    display: inline-flex;
-    flex-wrap: nowrap;
-    left: 0;
-    align-items: center; /* Centraliza verticalmente os itens */
-    justify-content: center; /* Centraliza horizontalmente os itens */
 }
 
 button{
@@ -133,14 +92,14 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: smaller;
+    font-size: large;
    
 }
 
 
 #upLoadPhoto {
     margin-top: 5%;
-    height: 60%;
+    height: 50%;
     width: 30%;
     border: none;
     border-radius: 15px;
@@ -158,41 +117,6 @@ footer{
     
 }
 
-.logo{
-    height: 100%;
-    display: flex;
-    background-color: #37264A;
-    align-items: center;
-    justify-content: start;
-    width: 10%;
-    border-radius: 10px;
-}
-.logo img{
-    margin: 2%;
-    height: 100%;
-}
-.menu {
-    background-color: #03051A;
-    height: 100%;
-    display: flex;
-    align-items: center; 
-    width: 70%;
-    margin: 0%;
-    border-radius: 50px 0 50px 0;
-}
-.iconeMenu {
-    height: 23px;
-    margin: 0;
-}
-.perfil{
-    width: 5%;
- }
- .perfil img{
-    background-color: #D9D9D9;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
- }
 
 #upLoadPhoto img{
     width: 100%;
@@ -208,13 +132,13 @@ nav{
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
     color: white;   
     background-color: #37264A;
-    height: 96%;
+    height: 97%;
     width: 100%;    
     display: inline-flex;
     flex-wrap: nowrap;
     left: 0;
-    align-items: center; /* Centraliza verticalmente os itens */
-    justify-content: center; /* Centraliza horizontalmente os itens */
+    align-items: center;
+    justify-content: center; 
 }
 .logo{
     height: 100%;
@@ -222,15 +146,17 @@ nav{
     background-color: #37264A;
     align-items: center;
     justify-content: start;
-    width: 11%;
+    width: 10%;
     border-radius: 10px;
 }
 .logo h4{
   margin: 0%;
+  font-size: large;
 }
 
 .logo img{
     height: 100%;
+    margin: 4px;
    
 }
 .menu {
@@ -243,7 +169,7 @@ nav{
     margin: 0px;
 }
 .iconeMenu {
-    height: 30px;
+    height: 33px;
     margin: 0;
 }
 .input-pesquisa{

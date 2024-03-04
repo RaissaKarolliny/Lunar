@@ -402,10 +402,11 @@
         overflow-y: auto ;
         overflow-x: hidden;
         background-color: #03051A !important;
+        overflow-x: hidden;
     }
     main{
         width: 100%;
-        height: 80vh; 
+        height: 72vh; 
         background: #A69DB0; 
         border-top-right-radius: 130px;
         position: relative;
@@ -421,6 +422,18 @@
         flex-direction: column;
         align-items: center;
 
+    }
+    footer{
+        width: 100%;
+        height: 8vh;
+        background-color: #37264A;
+        border: none;
+        color: #c4c4c4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: larger;
+       
     }
     #login{
         width: 100%;
@@ -453,20 +466,9 @@
     #section-mobile-home {
        display: none;
     }
-    #section-mobile-home button{
-        height: 100%;
-        width: auto;
-    }
-    
-    
     header img{
         width: auto;
       
-        height: 70%;
-       
-    }
-    .btn-nav-mobile-img{
-        max-width: auto;
         height: 70%;
        
     }
@@ -591,8 +593,8 @@
         display: inline-flex;
         flex-wrap: nowrap;
         left: 0;
-        align-items: center; /* Centraliza verticalmente os itens */
-        justify-content: center; /* Centraliza horizontalmente os itens */
+        align-items: center; 
+        justify-content: center;
     }
     .logo{
         height: 100%;
@@ -600,19 +602,17 @@
         background-color: #37264A;
         align-items: center;
         justify-content: start;
-        width: 11%;
+        width: 10%;
         border-radius: 10px;
     }
-    
-
     .logo h4{
       margin: 0%;
+      font-size: large;
     }
     
     .logo img{
         height: 100%;
-        margin: 5px;
-      
+        margin: 4px;
        
     }
     .menu {
@@ -626,12 +626,13 @@
         margin: 0px;
     }
     .iconeMenu {
-        height: 50%;
+        height: 55%;
         margin: 0;
     }
     .menu li{
         margin-top:2%;
-        height: 90%;
+        height: 100%;
+       
     }
     nav form{
         height: 90%;

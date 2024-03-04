@@ -234,9 +234,8 @@
     }
     main {
         margin-top: 1.5%;
-        height: 48vh;
+        height: 50vh;
         width: 100%;
-        
         display: flex;
         flex-direction: column;
     }
@@ -294,6 +293,9 @@
         border: none;
         background-color: transparent;
     }
+    footer{
+        display: none;
+    }
 }
 
 @media screen and (min-width:769px) {
@@ -338,6 +340,19 @@
         left: 0;
         align-items: center; /* Centraliza verticalmente os itens */
         justify-content: center; /* Centraliza horizontalmente os itens */
+    }
+    footer{
+        width: 100%;
+        height: 7vh;
+        background-color: #37264A;
+        border: none;
+        color: #c4c4c4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: large;
+       
+       
     }
 
     header section {
@@ -490,6 +505,7 @@
     }
     .logo h4{
       margin: 0%;
+      font-size: large;
     }
     
     .logo img{
@@ -589,7 +605,7 @@
 
     .menu li{
  
-        height: 40%;
+        height: 50%;
       
        
     }
@@ -637,17 +653,7 @@
         border-radius: 50%;
      }
 }
-footer {
-    position: fixed; /* Ou absolute, dependendo do comportamento desejado */
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 3vh; /* Ou a altura desejada para o seu footer */
-    background-color: #03051A; /* Cor de fundo desejada */
-    color: #fff; /* Cor do texto desejada */
-    text-align: center; /* Alinhamento do texto */
-    padding: 10px; /* Espaçamento interno */
-}
+
 img{
     pointer-events: none;
 }
