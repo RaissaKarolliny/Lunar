@@ -1,34 +1,44 @@
 let slideIndex = 0;
 
-function moverCarrossel(direction) {
+function moverCarrossel(direcao) {
   const carrossel = document.querySelector('.carrossel');
   const slides = document.querySelectorAll('.slide');
   const slideWidth = slides[0].offsetWidth;
 
-  slideIndex += direction;
-
-  if (slideIndex < 0) {
-    slideIndex = slides.length - 3;
-  } else if (slideIndex >= slides.length - 2) {
-    slideIndex = 0;
+  if (direcao === 'direita' && slideIndex < slides.length - 1) {
+    slideIndex++;
+  } else if (direcao === 'esquerda' && slideIndex > 0) {
+    slideIndex--;
   }
 
-  const translateValue = -slideIndex * slideWidth;
+
+  console.log("slideIndex: " + slideIndex);
+
+  let translateValue = -1 * slideIndex * slideWidth;
   carrossel.style.transform = `translateX(${translateValue}px)`;
+
+  atualizarBotoes();
 }
 
-document.addEventListener('DOMContentLoaded', function(){
-    var minhaImagem = document.getElementById('img-do-jogo');
-    var minhaDivParagrafoAvaliacao = document.getElementById('div-do-texto-e-da-avaliacao-do-jogo');
-    var meuParagrafo = document.getElementById('div-do-paragrafo-do-jogo');
-    var meuTitulo = document.getElementById('div-do-titulo-do-jogo');
-    var minhaAvaliacao = document.getElementById('div-avaliacao-e-botao-download');
+function atualizarBotoes() {
+  const btnEsquerda = document.querySelector('.btn-carrossel-esquerda');
+  const btnDireita = document.querySelector('.btn-carrossel-direita');
+  const slides = document.querySelectorAll('.slide');
 
-    var alturaImagem = minhaImagem.offsetHeight;
-    var alturaTitulo = meuTitulo.offsetHeight;
-    var alturaAvaliacao = minhaAvaliacao.offsetHeight;
-    var alturaParagrafo = alturaImagem - (alturaTitulo + alturaAvaliacao + 30);
+  if (slideIndex === 0) {
+    btnEsquerda.disabled = true;
+  } else {
+    btnEsquerda.disabled = false;
+  }
 
-    minhaDivParagrafoAvaliacao.style.maxHeight = alturaImagem + 'px';    
-    meuParagrafo.style.maxHeight = alturaParagrafo + 'px';
-});
+  if (slideIndex === slides.length - 1) {
+    btnDireita.disabled = true;
+  } else {
+    btnDireita.disabled = false;
+  }
+}
+
+function comentar(){
+  const conteudo = document.getElementById('targgetComenta');
+  conteudo.classList.toggle('comenta');
+}

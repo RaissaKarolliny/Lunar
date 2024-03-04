@@ -3,7 +3,6 @@
     padding: 0 auto;
 
 }
-
 html {
     height: 100%;
     width: 100%;
@@ -13,8 +12,111 @@ body {
     width: 100vw;
 }
 
-#navbar {
-    height: 10vh;
+main{
+    width: 100%;
+    color: #A69DB0;
+}
+
+header{
+    height: 50px;
+    width: 100%;
+    margin: 0px 0px 5px 0px;
+}
+nav{
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
+    color: white;   
+    background-color: #37264A;
+    height: 100%;
+    width: 100%;    
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Centraliza verticalmente os itens */
+    justify-content: center; /* Centraliza horizontalmente os itens */
+}
+#titulo-Lunar{
+    font-size: 100%;
+    margin: 0px;
+}
+.logo{
+    height: 100%;
+    display: flex;
+    background-color: #37264A;
+    align-items: center;
+    justify-content: start;
+    width: 10%;
+    margin: 0px auto 0px 40px;
+    border-radius: 10px;
+}
+.logo img{
+    height: 100%;
+    margin: 0px 10px 0px 0px;
+}
+#div-navbar{
+    height: 100%;
+    width: 70%;
+}
+.menu {
+    background-color: #03051A;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+    width: 100%;
+    border-radius: 50px 0 50px 0;
+}
+.iconeMenu {
+    height: 25px;
+    margin: 0;
+}
+.input-pesquisa{
+    width: 70%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    z-index: 0;
+ }
+ #div-pesquisa{
+    border: none;
+    margin-left: 1%;
+    height: 38px; 
+    background-color: #D9D9D9;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
+    border-radius: 50px;
+    display: flex;
+}
+#img-scr{
+    width: 20%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    padding-top: 1%;
+    background-color: transparent !important;
+    border: none !important;
+}
+#img-src-img{
+    width: 100%;
+    height: 100%;
+}
+.perfil{
+   width: 5%;
+}
+.perfil img{
+   background-color: #D9D9D9;
+   height: 40px;
+   width: 40px;
+   border-radius: 50%;
+}
+ul,
+ol {
+    list-style-type: none;
+}
+#div-pesquisa{
+    border: none;
+    margin-left: 1%;
+    height: 38px; 
+    background-color: #D9D9D9;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.40); 
+    border-radius: 50px;
+    display: flex;
 }
 
 
@@ -30,111 +132,132 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60%;
+    justify-content: space-between;
+    width: 65%;
     margin: 50px 0px 50px 0px;
 }
 
-#div-da-img-texto-e-avaliacao-do-jogo {
+#div-img-texto-avalicao-da-descricao-do-jogo{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: fit-content;
+    height: 45vh;
     width: 100%;
 }
 
-#div-da-img-do-jogo {
+#div-img-descricao-jogo {
     overflow: hidden;
-    flex: 40%;
-    height: fit-content;
     display: flex;
-    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: fit-content;
+    margin: 0px auto 0px 0px;
+    border-radius: 60px;
+}
+
+#img-descricao-jogo{
+    height: 100%;
+    width: auto;
+}
+
+#div-texto-avaliacao-da-descricao-do-jogo{
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    width: 65%;
+    margin: 0px 0px 0px auto;
+}
+
+#div-texto-avaliacao-da-descricao-do-jogo-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 90%;
+    margin: 0px 0px 0px auto;
+}
+
+#div-titulo-paragrafo-descricao-do-jogo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 70%;
+    width: 100%;
+}
+
+#div-titulo-descricao-do-jogo{
     margin: 0px auto 0px 0px;
 }
 
-#img-do-jogo {
+#titulo-descricao-do-jogo{
+    color:#d9d9d9;
+}
+
+#div-paragrafo-descricao-do-jogo::-webkit-scrollbar{
+    display: none;
+}
+
+#div-paragrafo-descricao-do-jogo{
+    overflow: auto;
+}
+
+#paragrafo-descricao-do-jogo{
+    color: #d9d9d9;
+    text-align: justify;
+}
+
+#div-avaliação-download-descricao-do-jogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 20%;
+    width: 100%;
+}
+
+#div-avaliacao-descricao-do-jogo{
+    height: fit-content;
+    width: 45%;
+    margin: auto auto auto 0px;
+
+}
+
+#img-avaliacao-descricao-do-jogo{
     height: auto;
     width: 100%;
 }
 
-#div-do-texto-e-da-avaliacao-do-jogo {
+#div-botao-download-descricao-do-jogo{
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    flex: 60%;
-    justify-content: space-between;
-    margin: 0px 0px 0px auto;
-}
-
-#div-do-texto-e-da-avaliacao-do-jogo-2{
-    height: 100%;
-    width: 90%;
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-#div-titulo-e-paragrafo-do-jogo{
-
-}
-
-#div-do-titulo-do-jogo {
-    margin: 0px auto 10px 0px
-}
-
-#titulo-do-jogo {
-    color: #d9d9d9;
-
-}
-
-#div-do-paragrafo-do-jogo {
-    overflow: auto;
-}
-
-#paragrafo-do-jogo {
-    color:#d9d9d9;
-    text-align: justify;
-}
-
-#div-avaliacao-e-botao-download {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 15%;
-    width: 100%;
-}
-
-#div-avaliacao-do-jogo {
-    display: flex;
-    margin: 0px auto 0px 0px;
-}
-
-
-#div-botao-download {
-    border-radius: 30px;
-    background-color: #d9d9d9;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    margin: 0px 0px 0px auto;
+    justify-content: center;
     height: 100%;
+    margin: 0px 0px 0px auto;
+    background-color: #d9d9d9;
+    border-radius: 40px;
 }
 
-#img-botao-download {
-    margin: 0px 25px 0px 25px;
-    height: 60%;
+#botao-download-descricao-do-jogo{
+    height: 70%;
+    margin: 0px 13px 0px 13px;
+    background-color: transparent !important;
+    border: none !important;
 }
 
-
-
+#img-download-descricao-do-jogo{
+    height: 100%;
+    width: auto;
+}
 
 
 .carrossel-container {
-    margin: 50px 0px 50px 0px;
-    position: relative;
+    margin: 50px 0px 0px 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    height: 20vh;
     width: 100%;
     overflow: hidden;
 }
@@ -145,33 +268,47 @@ body {
     width: fit-content;
 }
 
+.janela-carrossel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 80%;
+    overflow: hidden;
+}
+
 .carrossel {
     display: flex;
+    flex-direction: row;
     transition: transform 0.5s ease-in-out;
-    width: 47vw;
-    overflow: hidden;
+    height: 100%;
 }
   
 .slide {
-    width: 100%;
+    height: 100%;
+    flex: 0 0 100%;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
   
 .div-imagem-carrossel{
-    height: fit-content;
-    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 30%;
     overflow: hidden;
     border-radius: 30px;
-    display: flex;
-    margin: 0px 1vw 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 .img-carrossel {
-    width: 15vw;
+    width: 100%;
     height: auto;
 }
   
-.btn-carrossel {
+.btn-carrossel-esquerda, .btn-carrossel-direita {
     background-color: transparent !important;
     border: none !important;
 }
@@ -182,4 +319,206 @@ body {
   
 .btn-next {
     right: 10px;
+}
+
+
+
+
+
+#section-comentarios{
+    background-color: #A69DB0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.comenta {
+    display: none !important;
+ /* Adicionando uma transição suave */
+}
+
+input[type="submit"] {
+    background-color: #d9d9d9; /* Cor de fundo */
+    color: #03051A; /* Cor do texto */
+    border: none; /* Removendo a borda */
+    padding: 10px 20px; /* Espaçamento interno */
+    cursor: pointer; /* Mudando o cursor ao passar por cima */
+    border-radius: 10px 25px 10px 0px;
+    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+}
+
+textarea, textarea::placeholder{
+    background-color: transparent;
+    border:none;
+    color: white;
+}
+
+#div-btn-titulo-comentarios{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin: 10px auto 10px 40px;
+    border-radius: 10px 25px 10px 25px;
+    background-color: #d9d9d9;
+}
+
+#span-btn-comentar{
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 10px 25px 0px 25px;
+    background-color: #37264A;
+}
+
+#btn-comentar{
+    background-color: transparent !important;
+    border: none !important;
+}
+
+#img-btn-comentarios{
+    margin: 10px;
+    height: 3vh;
+}
+
+#div-titulo-do-botao-comentar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#titulo-do-botao-comentar{
+    font-size: 12px;
+    margin: 10px 20px 10px 20px;
+    color:#03051A;
+}
+
+#div-dos-comentarios{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+}
+    
+.comentario{
+    display: flex;
+    flex-direction: column;
+    border-radius: 2.5vh 10px 50px 10px;
+    overflow: hidden;
+    margin: 3.5%; 
+    background-color: #37264A;
+}
+
+.div-do-header-do-comentario{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #03051A;
+}
+
+.div-foto-perfil-do-comentario{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    width: 5vh;
+    margin: 0px auto 0px 0px;
+    background-color: #d9d9d9;
+    border-radius: 2.5vh;
+}
+
+.foto-perfil-do-comentario{
+    height: 75%;
+}
+
+.div-perfil-e-avaliacao-do-comentario{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0px auto 0px 2.5vh;
+    height: 100%;
+}
+
+.div-nome-do-usuario-do-comentario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    margin: 0px auto 0px 0px;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #d9d9d9;
+}
+
+.nome-do-usuario-do-comentario{
+    margin: 8px 10px 8px 4.5vh;
+    font-size: 14px;
+    color: #03051A;
+}
+
+.div-avaliacao-do-comentario{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 7px auto 7px 4.5vh;
+    height: 30px;
+}
+
+.avaliacao-do-comentario{
+    height: 70%;
+}
+
+.div-data-e-likes-do-comentario{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px 10px 0px 10px;
+}
+
+.div-data-do-comentario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paragrafo-data-do-comentario{
+    margin: 5px 0px 5px 0px;
+    color: #d9d9d9;
+    font-size: 14px;
+}
+
+.div-likes-do-comentario{
+    margin: 0px auto 0px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.paragrafo-likes-do-comentario{
+    margin: 0px;
+    color: #d9d9d9;
+    font-size: 14px;
+}
+
+.div-do-paragrafo-do-comentario{
+    display: flex;
+    width: 100%;
+    background-color: #37264A;
+}
+
+.paragrafo-do-comentario{
+    color: #d9d9d9;
+    margin: 10px 13px 20px 10px;
+    font-size: 12px;
+    width: 100%;
+
+    text-align: justify;
 }
