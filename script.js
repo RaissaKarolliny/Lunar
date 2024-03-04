@@ -29,7 +29,6 @@ function description(event) {
     const btnCarrossel = event.currentTarget; // Botão atual
     const jogoContainer = btnCarrossel.closest('.jogo-container'); // Encontra o elemento pai com a classe .jogo-container
     const descricao = jogoContainer.querySelector('.descricao'); // Encontra a descrição dentro do elemento pai
-    
     descricao.classList.toggle('description-active'); // Ativa ou desativa a classe para mostrar ou esconder a descrição
 }
 document.addEventListener('click', function (event) {
