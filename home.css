@@ -1,4 +1,4 @@
-@media screen and (max-width:1261px){
+@media screen and (max-width:768px){
     #bodyDasktop{
         display: none;
     }
@@ -198,26 +198,11 @@
     }
     
     .btn-carrossel-mobile {
-        background-color: #37264A;
-        position: absolute;
-        bottom: 0px;
-        right: 0px;
-        height: 25%;
-        width: 25%;
-        margin: 0;
-        padding: 3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 20px 0px 20px 0px;
-        padding: auto;
+        display: none;
     }
     
     .btn-carrossel-mobile-img {
-        height: 80%;
-        width: 80%;
-        align-items: center;
-        justify-content: center;
+        display: none;
     }
     
     ul,
@@ -225,44 +210,82 @@
         list-style-type: none;
     }
     
-    #gatilhoMenu {
+    #gatilhoMenu{
         position: relative;
-        z-index: 1;
+        z-index: 11;
     }
-    
-    .conteudoOffCanvas {
+        
+    .conteudoOffCanvas{
         height: 100vh;
         width: 40vw;
         position: fixed;
         left: -40vw;
         background-color: #03051A;
         transition: left 0.3s ease;
-        z-index: 3;
+        z-index: 10;
     }
     
     .listaOffCanvas {
         margin-top: 20%;
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        flex-direction: column; 
+        justify-content: space-around; 
+        padding-top:40%;
+    }
+    .listaOffCanvas li{
+        margin-bottom: 40%;
+    }
+    .listaOffCanvas a{
+        display: flex;
+        justify-content: space-evenly; 
         align-items: center;
     }
-    
-    .iconeMenu {
-        margin-top: 60%;
-        margin-bottom: 6%;
-        max-width: 50%;
-        margin-bottom: 10%;
+    .iconeMenu{
+        max-width: 90%;
     }
     
-    .ativarOffCanvas {
+    .ativarOffCanvas{
         transform: none !important;
         left: 0;
     }
+    .campo-pesquisa {
+        display: none;
+        background-color: rgba(0, 0, 0, 0.5); 
+        position: fixed;
+        top: 0.5%;
+        left: 22%;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+    }
+    .input-pesquisa {
+        width: calc(100% - 0px); 
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        z-index: 0;
+    }
+    .campo-pesquisa.ativo {
+        display: flex;
+        background-color: transparent;
+    }
     
+    #inputPesquisa {
+        margin-right: 10px;
+    }
+    .fade-preto {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3); 
+        z-index: 4; 
+        display: none; 
+    }
 }
 
-@media screen and (min-width:1262px){
+@media screen and (min-width:769px){
 #bodyMobile{
    display: none ;
 }
@@ -280,7 +303,8 @@ body {
     background-color: #A69DB0;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 header{
     height: 40vh;
@@ -526,12 +550,14 @@ nav{
         border-radius: 20px;
         overflow: hidden;
         cursor: pointer;
+        position: relative;
         transition: transform 0.5s;
     }
     
     .card img {
         width: 100%;
         border-radius: 10px;
+        z-index: 10;
     }
     
     .card:hover {
@@ -545,6 +571,8 @@ nav{
     
     #jogo-container-1 {
         margin-left: 10px;
+        position: relative;
+
     }
     
     .btn-carrossel-mobile {
@@ -561,6 +589,7 @@ nav{
         align-items: center;
         border-radius: 20px 0px 20px 0px;
         padding: auto;
+        z-index: 1;
     }
     
     .btn-carrossel-mobile-img {
@@ -569,37 +598,38 @@ nav{
         align-items: center;
         justify-content: center;
     }
-    
-    ul,
-    ol {
-        list-style-type: none;
-    }
-    
-    #gatilhoMenu {
-        position: relative;
-        z-index: 1;
-    }
-    
-    .conteudoOffCanvas {
-        height: 100vh;
-        width: 40vw;
-        position: fixed;
-        left: -40vw;
-        background-color: #03051A;
-        transition: left 0.3s ease;
-        z-index: 3;
-    }
-    
-    .listaOffCanvas {
-        margin-top: 20%;
+    #description {
+        position: absolute;
+        top:50%;
+        left: -50%;
+        bottom: 0%;
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
         align-items: center;
+        transform: translate(-50%, -50%);
+        z-index: 1; /* Certifica-se de que o texto esteja na frente da imagem */
+        color: white; /* Define a cor do texto */
+        width: 90%; 
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Adiciona um fundo semi-transparente para destacar o texto */
+        padding: 10px; /* Adiciona um preenchimento ao redor do texto */
+        border-radius: 5px; /* Adiciona bordas arredondadas */
     }
-    
-    .ativarOffCanvas {
-        transform: none !important;
-        left: 0;
+    .description-active{
+        left: 50% !important;
     }
+
+
+
+}
+img{
+    pointer-events: none;
+}
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+}
+ul,
+ol {
+    list-style-type: none;
 }

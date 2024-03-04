@@ -1,4 +1,4 @@
-@media screen and (max-width:1080px){
+@media screen and (max-width:768px){
     *{
         margin: 0 auto;
         padding: 0 auto;
@@ -132,7 +132,7 @@
         }
         #gatilhoMenu{
             position: relative;
-            z-index: 1;
+            z-index: 11;
         }
             
         .conteudoOffCanvas{
@@ -142,23 +142,26 @@
             left: -40vw;
             background-color: #03051A;
             transition: left 0.3s ease;
-            z-index: 0;
+            z-index: 10;
         }
         
         .listaOffCanvas {
             margin-top: 20%;
             display: flex;
-            flex-direction: column; /* Dispor os itens verticalmente */
-            justify-content: space-evenly    ; /* Alinhar os itens ao centro horizontalmente */
-            align-items: center; /* Alinhar os itens ao centro verticalmente */
+            flex-direction: column; 
+            justify-content: space-around; 
+            padding-top:40%;
         }
-        
+        .listaOffCanvas li{
+            margin-bottom: 40%;
+        }
+        .listaOffCanvas a{
+            display: flex;
+            justify-content: space-evenly; 
+            align-items: center;
+        }
         .iconeMenu{
-            margin-top: 60%;
-            margin-bottom: 6%;
-            max-width: 50%;
-            margin-bottom: 10%;
-         
+            max-width: 90%;
         }
         
         .ativarOffCanvas{
@@ -170,7 +173,7 @@
             font-size:small
         }
 }
-    @media screen and (min-width:1081px){
+    @media screen and (min-width:769px){
     
         *{
             margin: 0 auto;
@@ -412,7 +415,19 @@
     }
         
     
-      
+    img{
+        pointer-events: none;
+    }
+    html {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        height: 100%;
+        width: 100%;
+    }
+    
+    ul,
+    ol {
+        list-style-type: none;
+    }
     
      
     
